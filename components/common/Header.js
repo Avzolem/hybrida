@@ -14,7 +14,7 @@ const logoUrl = "/images/hybrida-logo.svg";
 const navigation = {
     categories: [],
     pages: [
-        { name: "Artistas", href: "/subastas" },
+        { name: "Artistas", href: "/artistas" },
         { name: "Contactanos", href: "/contact" },
         { name: "Candy Machine", href: "/candymachine" },
     ],

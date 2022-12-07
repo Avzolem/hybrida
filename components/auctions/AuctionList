@@ -14,7 +14,7 @@ const AuctionList = ({ data }) => {
           </div>
         ) : (
           <div className="emptystate w-full flex justify-center items-center">
-            <p>No hay subastas disponibles 😢 </p>
+            <p>No hay artistas disponibles 😢 </p>
           </div>
         )}
       </div>

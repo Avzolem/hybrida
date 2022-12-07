@@ -106,7 +106,7 @@ export default function Candymachine() {
                     </p>
                     <a
                         href="https://candy-machine-aucoin.vercel.app"
-                        className="mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-yellow-500 px-5 py-3 text-base font-medium text-white hover:bg-yellow-700 sm:w-auto"
+                        className="mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-pink-500 px-5 py-3 text-base font-medium text-white hover:bg-pink-700 sm:w-auto"
                     >
                         Compra el tuyo ahora! :D
                     </a>
