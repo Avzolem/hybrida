@@ -58,10 +58,10 @@ export default function Hero() {
                             </div>
                         </div>
                     </div>
-                    <div className="relative h-64 w-full sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2">
+                    <div className="relative h-full w-full sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2">
                         <img
                             className="absolute inset-0 h-full w-full object-cover"
-                            src="images/hybrida.png"
+                            src="images/convocatoria_hybrida.png"
                             alt=""
                         />
                     </div>
