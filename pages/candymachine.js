@@ -17,63 +17,7 @@ export default function Candymachine() {
                         <div class="w-96 carousel rounded-box justify-center">
                             <div class="carousel-item w-full">
                                 <img
-                                    src="/images/1-coin.png"
-                                    class="w-full"
-                                    alt="Tailwind CSS Carousel component"
-                                />
-                            </div>
-                            <div class="carousel-item w-full">
-                                <img
-                                    src="/images/2-coin.png"
-                                    class="w-full"
-                                    alt="Tailwind CSS Carousel component"
-                                />
-                            </div>
-                            <div class="carousel-item w-full">
-                                <img
-                                    src="/images/3-coin.png"
-                                    class="w-full"
-                                    alt="Tailwind CSS Carousel component"
-                                />
-                            </div>
-                            <div class="carousel-item w-full">
-                                <img
-                                    src="/images/4-coin.png"
-                                    class="w-full"
-                                    alt="Tailwind CSS Carousel component"
-                                />
-                            </div>
-                            <div class="carousel-item w-full">
-                                <img
-                                    src="/images/5-coin.png"
-                                    class="w-full"
-                                    alt="Tailwind CSS Carousel component"
-                                />
-                            </div>
-                            <div class="carousel-item w-full">
-                                <img
-                                    src="/images/6-coin.png"
-                                    class="w-full"
-                                    alt="Tailwind CSS Carousel component"
-                                />
-                            </div>
-                            <div class="carousel-item w-full">
-                                <img
-                                    src="/images/7-coin.png"
-                                    class="w-full"
-                                    alt="Tailwind CSS Carousel component"
-                                />
-                            </div>
-                            <div class="carousel-item w-full">
-                                <img
-                                    src="/images/8-coin.png"
-                                    class="w-full"
-                                    alt="Tailwind CSS Carousel component"
-                                />
-                            </div>
-                            <div class="carousel-item w-full">
-                                <img
-                                    src="/images/9-coin.png"
+                                    src="/images/nft2.png"
                                     class="w-full"
                                     alt="Tailwind CSS Carousel component"
                                 />
@@ -81,13 +25,9 @@ export default function Candymachine() {
                         </div>
                     </div>
 
-                    <p className="mt-4 text-lg leading-6 text-gray-700">
+                    <p className="mt-4 font-bold text-lg leading-6  text-gray-500">
                         Te gusta el arte digital? Te gusta la tecnología de
                         blockchain?
-                        <br />
-                        Utilizamos inteligencia artifical de generacion de
-                        imagenes para crear arte digital, a travez de Dall-E y
-                        Stable Diffusion.
                         <br />
                         Con este Candy Machine tienes la oportunidad de obtener
                         un NFT de arte digital, que puedes guardar en tu wallet
@@ -98,11 +38,6 @@ export default function Candymachine() {
                         una aplicación que almacena la historia y los datos
                         asociados a un artículo específico que posees.
                         <br />
-                        Cuando compras una NFT, significa que has comprado sus
-                        datos al creador y puedes utilizarla en el contexto de
-                        su proyecto. Como creador, una vez que alguien compra tu
-                        NFT, esa persona es su propietaria y puede hacer lo que
-                        quiera con ella.
                     </p>
                     <a
                         href="https://candy-machine-aucoin.vercel.app"

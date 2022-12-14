@@ -12,10 +12,17 @@ export default function Hero() {
                 crossorigin="anonymous"
             ></script>
             <div className="relative bg-[#0a012c]">
-                <main className="lg:relative">
-                    <div className="mx-auto w-full max-w-7xl pt-16 pb-20 text-center lg:py-48 lg:text-left">
-                        <div className="px-4 sm:px-8 lg:w-1/2 xl:pr-16">
-                            <h1 className="text-4xl font-bold tracking-tight text-white-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+                <main className="flex flex-col  relative">
+                    <div className="flex relative absolute h-full w-full mt-6 md:mt-0 justify-center">
+                        <img
+                            className="absolute relative  h-full w-full md:h-2/3 md:w-2/3  "
+                            src="images/convocatoria_hybrida.png"
+                            alt=""
+                        />
+                    </div>
+                    <div className="mx-auto w-full max-w-7xl pt-16 pb-20 text-center lg:py-32 lg:text-left">
+                        <div className="px-4 sm:px-8 lg:w-full ">
+                            <h1 className="text-4xl font-bold tracking-tight text-white-900 sm:text-5xl md:text-6xl">
                                 <span className="block text-white xl:inline">
                                     Explora el{" "}
                                 </span>{" "}
@@ -57,13 +64,6 @@ export default function Hero() {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="relative h-full w-full sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2">
-                        <img
-                            className="absolute inset-0 h-full w-full object-cover"
-                            src="images/convocatoria_hybrida.png"
-                            alt=""
-                        />
                     </div>
                 </main>
             </div>
