@@ -97,12 +97,11 @@ const ContactPage = () => {
                     </svg>
                     <div className="text-center">
                         <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                            Unete a nuestra comunidad
+                            Registro a la Convocatoria Hybrida 2023
                         </h2>
                         <p className="mt-4 text-lg leading-6 text-gray-500">
-                            Si te interesa formar parte de la comunidad de
-                            artistas de Hybrida, enviarnos un mensaje y nos
-                            pondremos en contacto contigo.
+                            Participa en la convocatoria Hybrida 2023 y
+                            conviértete en un agente de evolucion para el arte.
                         </p>
                     </div>
                     <div className="mt-12">
