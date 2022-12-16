@@ -13,7 +13,7 @@ export default function Hero() {
             ></script>
             <div className="relative bg-[#0a012c]">
                 <main className="flex flex-col  relative">
-                    <div className="mx-auto w-full max-w-7xl pt-16 pb-20 text-center lg:py-32 lg:text-left">
+                    <div className="mx-auto w-full max-w-7xl pt-16 pb-20 text-center lg:py-32 ">
                         <div className="px-4 sm:px-8 lg:w-full ">
                             <h1 className="text-4xl font-bold tracking-tight text-white-900 sm:text-5xl md:text-6xl">
                                 <span className="block text-white xl:inline">
@@ -27,10 +27,10 @@ export default function Hero() {
                                 </span>{" "}
                             </h1>
 
-                            <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
+                            <div className="mt-10 sm:flex sm:justify-center ">
                                 <div className="rounded-md shadow">
                                     <a
-                                        href="/contact"
+                                        href="#scroll"
                                         className="flex w-full items-center justify-center rounded-md border border-transparent bg-pink-500 px-8 py-3 text-base font-medium text-white hover:bg-pink-700 md:py-4 md:px-10 md:text-lg"
                                     >
                                         {" "}
@@ -47,9 +47,43 @@ export default function Hero() {
                                         </svg> */}
                                     </a>
                                 </div>
-                                <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex relative absolute h-full w-full mt-6 md:mt-0 justify-center">
+                        <a name="init"></a>
+                        <img
+                            name="hybrida"
+                            className="absolute relative  h-full w-full md:h-2/3 md:w-2/3  "
+                            src="images/convocatoria_hybrida.png"
+                            alt=""
+                        />
+                    </div>
+                    <div className="mx-auto w-full max-w-7xl pt-16 pb-20 text-center lg:py-32 ">
+                        <div className="px-4 sm:px-8 lg:w-full ">
+                            <h1 className="text-4xl font-bold tracking-tight text-white-900 sm:text-3xl md:text-4xl">
+                                <span className="block text-white xl:inline">
+                                    Da el salto en la inovacion y conoce{" "}
+                                </span>{" "}
+                                <span className="block text-pink-500 xl:inline">
+                                    Hybrida{" "}
+                                </span>
+                            </h1>
+
+                            <div className="mt-10 sm:flex sm:justify-center ">
+                                <div className="rounded-md shadow">
                                     <a
                                         href="/contact"
+                                        className="flex w-full items-center justify-center rounded-md border border-transparent bg-pink-500 px-8 py-3 text-base font-medium text-white hover:bg-pink-700 md:py-4 md:px-10 md:text-lg"
+                                    >
+                                        {" "}
+                                        <span>¡Registrate Aqui!  </span>
+                                    </a>
+                                    <a name="scroll"></a>
+                                </div>
+                                <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+                                    <a
+                                        href="#init"
                                         className="flex w-full items-center justify-center rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-pink-500 hover:bg-gray-100 md:py-4 md:px-10 md:text-lg"
                                     >
                                         ¿Que es Hybrida?
@@ -57,13 +91,6 @@ export default function Hero() {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="flex relative absolute h-full w-full mt-6 md:mt-0 justify-center">
-                        <img
-                            className="absolute relative  h-full w-full md:h-2/3 md:w-2/3  "
-                            src="images/convocatoria_hybrida.png"
-                            alt=""
-                        />
                     </div>
                 </main>
             </div>
