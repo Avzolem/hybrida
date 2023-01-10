@@ -18,7 +18,7 @@ export default function Hero() {
                 Hybrida 2023
               </span>
             </h1>
-            <p className="mx-auto mt-3 mb-1 max-w-md text-lg text-blue-500 sm:text-xl md:mt-5 md:max-w-3xl">
+            <p className="mx-auto mt-3 mb-1 max-w-md text-lg font-light text-blue-500 sm:text-xl md:mt-5 md:max-w-3xl">
               Traslada tus creaciones a un espacio en el metaverso,
               especialmente diseñado para presentar cualquier tipo de obra
               artística, de diseño, tecnológica o mixta.
@@ -37,7 +37,7 @@ export default function Hero() {
         {/* a paragraph with the width in the full screen */}
         <div className="flex mx-auto w-full max-w-7xl pt-16 pb-1 text-center sm:pb-1 lg:pb-1 lg:text-left">
           <div className="flex-auto px-6  sm:px-8 lg:w-1/2 xl:pr-16">
-            <p className="mt-3 mb-1 max-w-md text-lg text-white sm:text-xl md:mt-5 md:max-w-4xl">
+            <p className="mt-3 mb-1 max-w-md text-lg font-light text-white sm:text-xl md:mt-5 md:max-w-4xl">
               Hybrida es un espacio en el metaverso, especialmente diseñado para
               presentar cualquier tipo de obra artística, de diseño, tecnológica
               o mixta. En Hybrida podrás mostrar tu trabajo a un público global,
@@ -54,10 +54,10 @@ export default function Hero() {
         </div>
         <div className="flex mx-auto w-full max-w-7xl pt-1 pb-1 text-center sm:pb-1 lg:pb-1 lg:text-left">
           <div className="flex-auto px-6  sm:px-8 lg:w-1/2 xl:pr-16">
-            <p className="mt-0 mb-1 max-w-md text-lg text-white sm:text-xl md:mt-5 md:max-w-4xl">
+            <p className="mt-0 mb-1 max-w-md text-lg font-light text-white sm:text-xl md:mt-5 md:max-w-4xl">
               Un laboratorio de convergencias entre arte, diseño y tecnología.
             </p>
-            <p className="mt-0 mb-1 max-w-md text-lg text-white sm:text-xl md:mt-5 md:max-w-4xl">
+            <p className="mt-0 mb-1 max-w-md text-lg font-light text-white sm:text-xl md:mt-5 md:max-w-4xl">
               Es el primer espacio de la Universidad Autónoma de Chihuahua en el
               metaverso. Un entorno diseñado para dar cabida a expresiones
               artísticas aumentadas por medio de tecnología inmersiva. Un
@@ -74,7 +74,7 @@ export default function Hero() {
         </div>
         <div className="flex mx-auto w-full max-w-7xl pt-1 pb-1 text-center sm:pb-1 lg:pb-1 lg:text-left">
           <div className="flex-auto px-6  sm:px-8 lg:w-1/2 xl:pr-16">
-            <p className="mt-0 mb-1 max-w-md text-lg text-white sm:text-xl md:mt-5 md:max-w-4xl">
+            <p className="mt-0 mb-1 max-w-md text-lg font-light text-white sm:text-xl md:mt-5 md:max-w-4xl">
               Libre. Aunque se buscan expresiones creativas y artísticas que
               puedan transformarse y enriquecerse mediante el contacto con
               plataformas y tecnologías digitales como Realidad Virtual,
@@ -91,7 +91,7 @@ export default function Hero() {
         </div>
         <div className="flex mx-auto w-full max-w-7xl pt-1 pb-1 text-center sm:pb-1 lg:pb-1 lg:text-left">
           <div className="flex-auto px-6  sm:px-8 lg:w-1/2 xl:pr-16">
-            <p className="mt-0 mb-1 max-w-md text-lg text-white sm:text-xl md:mt-5 md:max-w-4xl">
+            <p className="mt-0 mb-1 max-w-md text-lg font-light text-white sm:text-xl md:mt-5 md:max-w-4xl">
               La recepción de solicitudes inicia el X de XXXXX y cierra el Y de
               YYYYY. <br />
               Proceso de evaluación y selección: X de XXXXX - X de XXXXX de
@@ -114,7 +114,7 @@ export default function Hero() {
         </div>
         <div className="flex mx-auto w-full max-w-7xl pt-1 pb-1 text-center sm:pb-1 lg:pb-1 lg:text-left">
           <div className="flex-auto px-6  sm:px-8 lg:w-1/2 xl:pr-16">
-            <p className="mt-0 mb-1 max-w-md text-lg text-white sm:text-xl md:mt-5 md:max-w-4xl">
+            <p className="mt-0 mb-1 max-w-md text-lg font-light text-white sm:text-xl md:mt-5 md:max-w-4xl">
               Consulta las Bases de la convocatoria, disponibles en XXXX.XXX.
             </p>
           </div>
@@ -126,7 +126,7 @@ export default function Hero() {
         </div>
         <div className="flex mx-auto w-full max-w-7xl pt-1 pb-1 text-center sm:pb-1 lg:pb-1 lg:text-left">
           <div className="flex-auto px-6  sm:px-8 lg:w-1/2 xl:pr-16">
-            <p className="mt-0 mb-1 max-w-md text-lg text-white sm:text-xl md:mt-5 md:max-w-4xl">
+            <p className="mt-0 mb-1 max-w-md text-lg font-light text-white sm:text-xl md:mt-5 md:max-w-4xl">
               hybrida@uach.mx
             </p>
           </div>
@@ -139,14 +139,14 @@ export default function Hero() {
                 height={92}
               />
             </div>
-            <div className="">
+            {/* <div className="">
               <Image
                 src="/images/convocatoria/uach.png"
                 alt="Uach"
                 width={300}
                 height={293}
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </main>
