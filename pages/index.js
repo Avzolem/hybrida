@@ -1,10 +1,11 @@
 import MainLayout from "@/components/layouts/MainLayout";
+import Hero from "@/components/hybrida/Hero";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Hero() {
+export default function Home() {
   return (
     <MainLayout>
       <script
@@ -29,7 +30,7 @@ export default function Hero() {
                 <div className="rounded-md shadow">
                   <a
                     href="/contact"
-                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-fuchsia-500 px-8 py-3 text-base font-medium text-white hover:bg-pink-700 md:py-4 md:px-10 md:text-lg"
+                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-fuchsia-500 px-8 py-3 text-base font-medium text-white hover:bg-fuchsia-700 md:py-4 md:px-10 md:text-lg"
                   >
                     {" "}
                     <span>¡Registrate Ahora!  </span>
@@ -58,12 +59,13 @@ export default function Hero() {
           </div>
           <div className="flex relative absolute h-full w-full mt-6 md:mt-0 justify-center">
             <a name="init"></a>
-            <img
+            {/* <img
               name="hybrida"
               className="absolute relative  h-full w-full md:h-2/3 md:w-2/3  "
               src="images/convocatoria_hybrida.png"
               alt=""
-            />
+            /> */}
+            <Hero />
           </div>
           <div className="mx-auto w-full max-w-7xl pt-16 pb-20 text-center lg:py-32 ">
             <div className="px-4 sm:px-8 lg:w-full ">
@@ -71,14 +73,16 @@ export default function Hero() {
                 <span className="block text-white xl:inline">
                   Da el salto en la inovacion y conoce{" "}
                 </span>{" "}
-                <span className="block text-pink-500 xl:inline">Hybrida </span>
+                <span className="block text-fuchsia-400 xl:inline">
+                  Hybrida{" "}
+                </span>
               </h1>
 
               <div className="mt-10 sm:flex sm:justify-center ">
                 <div className="rounded-md shadow">
                   <a
                     href="/contact"
-                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-pink-500 px-8 py-3 text-base font-medium text-white hover:bg-pink-700 md:py-4 md:px-10 md:text-lg"
+                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-fuchsia-500 px-8 py-3 text-base font-medium text-white hover:bg-fuchsia-700 md:py-4 md:px-10 md:text-lg"
                   >
                     {" "}
                     <span>¡Registrate Aqui!  </span>
