@@ -1,13 +1,24 @@
 module.exports = {
-    content: [
-        "./pages/**/*.{js,ts,jsx,tsx}",
-        "./components/**/*.{js,ts,jsx,tsx}",
-    ],
-    theme: {
-        extend: {},
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        hybrida: {
+          transparent: "transparent",
+          current: "currentColor",
+          rosalogo: "#ea78f4",
+          lightblue: "#47a8ff",
+          indigo: "#7252ff",
+          fuchsia: "#d18bfd",
+        },
+      },
     },
-    daisyui: {
-        themes: false,
-    },
-    plugins: [require("@tailwindcss/forms"), require("daisyui")],
+  },
+  daisyui: {
+    themes: false,
+  },
+  plugins: [require("@tailwindcss/forms"), require("daisyui")],
 };
