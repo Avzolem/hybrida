@@ -22,20 +22,16 @@ export default function Hero() {
               <Image
                 src="/images/convocatoria/convocatoria-hybrida.png"
                 alt="Convocatoria"
-                width={390}
-                height={80}
+                width={600}
+                height={90}
               />
+            </div>
+            <div>
               <Image
-                src="/images/convocatoria/hybrida.png"
+                src="/images/convocatoria/hybrida-2023-completo.png"
                 alt="Convocatoria"
-                width={200}
-                height={75}
-              />
-              <Image
-                src="/images/convocatoria/hybrida-2023.png"
-                alt="Convocatoria"
-                width={200}
-                height={75}
+                width={360}
+                height={47}
               />
             </div>
             <p className="mx-auto mt-3 mb-1 max-w-md text-lg font-light text-blue-500 sm:text-xl md:mt-5 md:max-w-3xl">
