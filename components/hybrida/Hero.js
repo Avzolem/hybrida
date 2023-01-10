@@ -12,12 +12,32 @@ export default function Hero() {
       <main className="lg:relative">
         <div className="mx-auto w-full max-w-7xl pt-16 pb-1 text-center sm:pb-1 lg:pb-1 lg:text-left">
           <div className="px-6 sm:px-8 lg:w-1/2 xl:pr-16">
-            <h1 className="text-4xl font-bold tracking-tight text-fuchsia-500 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+            {/* <h1 className="text-4xl font-bold tracking-tight text-fuchsia-500 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span className="block xl:inline">CONVOCATORIA</span>{" "}
               <span className="block text-fuchsia-500 xl:inline">
                 Hybrida 2023
               </span>
-            </h1>
+            </h1> */}
+            <div>
+              <Image
+                src="/images/convocatoria/convocatoria-hybrida.png"
+                alt="Convocatoria"
+                width={390}
+                height={80}
+              />
+              <Image
+                src="/images/convocatoria/hybrida.png"
+                alt="Convocatoria"
+                width={200}
+                height={75}
+              />
+              <Image
+                src="/images/convocatoria/hybrida-2023.png"
+                alt="Convocatoria"
+                width={200}
+                height={75}
+              />
+            </div>
             <p className="mx-auto mt-3 mb-1 max-w-md text-lg font-light text-blue-500 sm:text-xl md:mt-5 md:max-w-3xl">
               Traslada tus creaciones a un espacio en el metaverso,
               especialmente diseñado para presentar cualquier tipo de obra
