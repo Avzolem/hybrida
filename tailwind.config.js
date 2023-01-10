@@ -16,6 +16,7 @@ module.exports = {
           lightblue: "#47a8ff",
           indigo: "#7252ff",
           fuchsia: "#d18bfd",
+          bgblue: "#0a012c",
         },
       },
     },
