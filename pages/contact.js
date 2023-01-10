@@ -96,7 +96,7 @@ const ContactPage = () => {
             />
           </svg>
           <div className="text-center">
-            <h2 className="text-3xl font-extrabold tracking-tight text-hybrida-fuchsia sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight text-hybrida-fuchsia sm:text-4xl">
               Registro a la Convocatoria Hybrida 2023
             </h2>
             <p className="mt-4 text-lg leading-6 text-white">
