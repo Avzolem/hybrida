@@ -110,7 +110,7 @@ const Header = () => {
             <Popover.Group as="nav" className="flex space-x-10">
               {navigation.pages.map((page) => (
                 <Link key={page.name} href={page.href}>
-                  <a className="text-base font-medium text-white hover:text-pink-300">
+                  <a className="text-base font-medium text-hybrida-fuchsia hover:text-pink-300">
                     {page.name}
                   </a>
                 </Link>
