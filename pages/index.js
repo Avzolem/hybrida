@@ -1,6 +1,7 @@
 import MainLayout from "@/components/layouts/MainLayout";
 import Hero from "@/components/hybrida/Hero";
-import ParticlesBackground from "../components/hybrida/ParticlesBackground";
+import Head from "next/head";
+
 function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
 }
@@ -8,20 +9,26 @@ function classNames(...classes) {
 export default function Home() {
     return (
         <MainLayout>
+            <Head>
+                <title>Hybrida</title>
+                <meta
+                    name="description"
+                    content="Hybrida es una plataforma de arte digital que busca crear un espacio de colaboración entre artistas y coleccionistas."
+                />
+            </Head>
             <script
                 src="https://kit.fontawesome.com/16679573af.js"
                 crossorigin="anonymous"
             ></script>
-            <ParticlesBackground />
             <div className="relative bg-[#0a012c]">
                 <main className="flex flex-col  relative">
                     <div className="mx-auto w-full max-w-7xl pt-16 pb-20 text-center lg:py-32 ">
                         <div className="px-4 sm:px-8 lg:w-full ">
                             <h1 className="text-4xl font-bold tracking-tight text-white-900 sm:text-5xl md:text-6xl">
-                                <span className="block text-white xl:inline">
+                                <span className=" text-white xl:inline">
                                     Explora el{" "}
                                 </span>{" "}
-                                <span className="block text-fuchsia-400 xl:inline">
+                                <span className=" text-hybrida-rosalogo xl:inline">
                                     Metaverso{" "}
                                 </span>
                                 <span className="block text-white xl:inline">
@@ -62,12 +69,6 @@ export default function Home() {
                     </div>
                     <div className="convocatoria flex relative absolute h-full w-full mt-6 md:mt-0 justify-center">
                         <a name="init"></a>
-                        {/* <img
-              name="hybrida"
-              className="absolute relative  h-full w-full md:h-2/3 md:w-2/3  "
-              src="images/convocatoria_hybrida.png"
-              alt=""
-            /> */}
                         <Hero />
                     </div>
                     <div></div>
