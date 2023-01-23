@@ -101,7 +101,7 @@ const Header = () => {
             </Link>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
-            <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-white hover:text-pink-300 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+            <Popover.Button className="bg-hybrida-bgblue rounded-md p-2 inline-flex items-center justify-center text-white hover:text-pink-300 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-hybrida-fuchsia">
               <span className="sr-only">Open menu</span>
               <MenuIcon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
@@ -121,7 +121,7 @@ const Header = () => {
               {publicKey ? (
                 <Menu as="div" className="ml-3 relative">
                   <div>
-                    <Menu.Button className="bg-white flex text-sm rounded-full focus:outline-none focus:ring-offset-2  focus:ring-pink-300">
+                    <Menu.Button className="bg-hybrida-fuchsia flex text-sm rounded-full focus:outline-none focus:ring-offset-2  focus:ring-pink-300">
                       <span className="sr-only">Open user menu</span>
 
                       <Image
@@ -220,7 +220,7 @@ const Header = () => {
           focus
           className="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
         >
-          <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+          <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-hybrida-bgblue divide-y-2 divide-gray-50">
             <div className="pt-5 pb-6 px-5 sm:pb-8">
               <div className="flex items-center justify-between">
                 <div>
@@ -232,7 +232,7 @@ const Header = () => {
                   </Link>
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                  <Popover.Button className="bg-hybrida-bgblue rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-hybrida-fuchsia">
                     <XIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
                 </div>
@@ -242,7 +242,7 @@ const Header = () => {
               <div className="grid grid-cols-2 gap-4">
                 {navigation.pages.map((page) => (
                   <Link key={page.name} href={page.href}>
-                    <a className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
+                    <a className="rounded-md text-base font-medium text-hybrida-fuchsia hover:text-gray-700">
                       {page.name}
                     </a>
                   </Link>
