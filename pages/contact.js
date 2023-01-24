@@ -23,9 +23,6 @@ const ContactPage = () => {
 
         //DO WHATEVER YOU WANT HERE
         console.log("SUBMITED DATA =>", data);
-        {
-            type = "submit";
-        }
     };
 
     return (
@@ -123,6 +120,7 @@ const ContactPage = () => {
                                 </label>
                                 <div className="mt-1">
                                     <input
+                                        required
                                         type="text"
                                         name="firstName"
                                         id="firstName"
@@ -151,6 +149,7 @@ const ContactPage = () => {
                                 </label>
                                 <div className="mt-1">
                                     <input
+                                        required
                                         type="text"
                                         name="lastName"
                                         id="lastName"
@@ -181,6 +180,7 @@ const ContactPage = () => {
                                 </label>
                                 <div className="mt-1">
                                     <input
+                                        required
                                         id="email"
                                         name="email"
                                         type="email"
@@ -226,6 +226,7 @@ const ContactPage = () => {
                                         </select>
                                     </div>
                                     <input
+                                        required
                                         type="text"
                                         name="phone"
                                         id="phone"
@@ -256,6 +257,7 @@ const ContactPage = () => {
                                 </label>
                                 <div className="mt-1">
                                     <input
+                                        required
                                         type="text"
                                         name="company"
                                         id="company"
@@ -288,6 +290,7 @@ const ContactPage = () => {
                                 </label>
                                 <div className="mt-1">
                                     <textarea
+                                        required
                                         id="message"
                                         name="message"
                                         rows={4}
@@ -374,6 +377,7 @@ const ContactPage = () => {
                             <div className="sm:col-span-2">
                                 <button
                                     onSubmit={handleSubmit(onSubmit)}
+                                    type="submit"
                                     className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-hybrida-fuchsia hover:bg-fuchsia-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
                                 >
                                     Entrar en el Metaverso!
