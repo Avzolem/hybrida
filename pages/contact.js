@@ -106,9 +106,9 @@ const ContactPage = () => {
                     </div>
                     <div className="mt-12">
                         <form
-                            onSubmit={handleSubmit(onSubmit)}
+                            //onSubmit={handleSubmit(onSubmit)}
                             className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
-                            action="https://formsubmit.co/hybrida@uach.mx"
+                            action="https://formsubmit.co/a28348111aa112f94fd494da82247a8c"
                             method="POST"
                         >
                             <div>
@@ -375,6 +375,11 @@ const ContactPage = () => {
                                 >
                                     Entrar en el Metaverso!
                                 </button>
+                                <input
+                                    type="hidden"
+                                    name="_captcha"
+                                    value="false"
+                                ></input>
                             </div>
                         </form>
                     </div>

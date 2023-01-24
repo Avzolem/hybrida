@@ -2,16 +2,16 @@ import SocialIcon from "@/components/icons/Social";
 //EDIT ME PLEASE
 const copyrightLabel = `©${new Date().getFullYear()} Hybrida. All rights reserved.`;
 const socialLink = [
-    {
+    /* {
         name: "Facebook",
         href: "#",
         icon: "facebook",
-    },
+    },*/
     {
         name: "Instagram",
         href: "https://www.instagram.com/hybrida.uach/",
         icon: "instagram",
-    },
+    } /*
     {
         name: "TikTok",
         href: "#",
@@ -21,7 +21,7 @@ const socialLink = [
         name: "Twitter",
         href: "#",
         icon: "twitter",
-    },
+    },*/,
     {
         name: "Discord",
         href: "https://discord.gg/6g7rZTsaCP",
