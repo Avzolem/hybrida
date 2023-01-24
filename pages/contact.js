@@ -108,6 +108,8 @@ const ContactPage = () => {
                         <form
                             onSubmit={handleSubmit(onSubmit)}
                             className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
+                            action="https://formsubmit.co/hybrida@uach.mx"
+                            method="POST"
                         >
                             <div>
                                 <label
@@ -166,35 +168,7 @@ const ContactPage = () => {
                                     )}
                                 </div>
                             </div>
-                            <div className="sm:col-span-2">
-                                <label
-                                    htmlFor="company"
-                                    className="block text-sm font-medium text-hybrida-fuchsia"
-                                >
-                                    Escuela/Organizacion
-                                </label>
-                                <div className="mt-1">
-                                    <input
-                                        type="text"
-                                        name="company"
-                                        id="company"
-                                        autoComplete="organization"
-                                        className="py-3 px-4 block w-full shadow-sm focus:ring-hybrida-fuchsia focus:border-hybrida-fuchsia border-gray-300 rounded-md"
-                                        {...register("company", {
-                                            required: {
-                                                value: true,
-                                                message:
-                                                    "Escuela/Organizacion es requerido",
-                                            },
-                                        })}
-                                    />
-                                    {errors.company && (
-                                        <div className="mt-3 text-sm text-red-600">
-                                            {errors.company.message}
-                                        </div>
-                                    )}
-                                </div>
-                            </div>
+
                             <div className="sm:col-span-2">
                                 <label
                                     htmlFor="email"
@@ -259,7 +233,7 @@ const ContactPage = () => {
                                             required: {
                                                 value: true,
                                                 message:
-                                                    "Teléfono es requerido",
+                                                    "El numero de teléfono es requerido",
                                             },
                                         })}
                                     />
@@ -272,10 +246,42 @@ const ContactPage = () => {
                             </div>
                             <div className="sm:col-span-2">
                                 <label
+                                    htmlFor="company"
+                                    className="block text-sm font-medium text-hybrida-fuchsia"
+                                >
+                                    Escuela/Organizacion
+                                </label>
+                                <div className="mt-1">
+                                    <input
+                                        type="text"
+                                        name="company"
+                                        id="company"
+                                        autoComplete="organization"
+                                        className="py-3 px-4 block w-full shadow-sm focus:ring-hybrida-fuchsia focus:border-hybrida-fuchsia border-gray-300 rounded-md"
+                                        {...register("company", {
+                                            required: {
+                                                value: true,
+                                                message:
+                                                    "La Escuela/Organizacion es requerida",
+                                            },
+                                        })}
+                                    />
+                                    {errors.company && (
+                                        <div className="mt-3 text-sm text-red-600">
+                                            {errors.company.message}
+                                        </div>
+                                    )}
+                                </div>
+                            </div>
+                            <div className="sm:col-span-2">
+                                <label
                                     htmlFor="message"
                                     className="block text-sm font-medium text-hybrida-fuchsia"
                                 >
-                                    Mensaje
+                                    Sube tu obra a la nube y copia aquí el
+                                    enlace para compartir, si requiere algún
+                                    software ó plugin extra para visualizarse,
+                                    comentánoslo.
                                 </label>
                                 <div className="mt-1">
                                     <textarea
@@ -345,7 +351,7 @@ const ContactPage = () => {
                                             >
                                                 Política de privacidad
                                             </a>{" "}
-                                            and{" "}
+                                            y{" "}
                                             <a
                                                 href="#"
                                                 className="font-medium text-hybrida-fuchsia underline"

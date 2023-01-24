@@ -9,7 +9,7 @@ const socialLink = [
     },
     {
         name: "Instagram",
-        href: "#",
+        href: "https://www.instagram.com/hybrida.uach/",
         icon: "instagram",
     },
     {
