@@ -10,7 +10,7 @@ const Layout = ({ title, description, children, ...rest }) => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Seo subtitle={title} description={description} />
-            <div className="flex flex-col w-full" {...rest}>
+            <div className="flex flex-col w-full mb-auto" {...rest}>
                 <Header />
                 <div className="my-0">{children}</div>
                 <Footer />

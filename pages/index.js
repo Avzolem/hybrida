@@ -24,7 +24,7 @@ export default function Home() {
                     crossorigin="anonymous"
                 ></script>
 
-                <main className="flex flex-col  relative">
+                <main className="flex flex-col  relative mb-auto">
                     <div className="mx-auto w-full max-w-7xl pt-16 pb-20 text-center lg:py-32 ">
                         <div className="px-4 sm:px-8 lg:w-full ">
                             <h1 className="text-4xl font-bold tracking-tight text-white-900 sm:text-5xl md:text-6xl">
