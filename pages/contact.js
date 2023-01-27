@@ -352,19 +352,11 @@ const ContactPage = () => {
                                             Seleccionando esto, estás de acuerdo
                                             con nuestra{" "}
                                             <a
-                                                href="#"
+                                                href="/privacy"
                                                 className="font-medium text-hybrida-fuchsia underline"
                                             >
-                                                Política de privacidad
-                                            </a>{" "}
-                                            y{" "}
-                                            <a
-                                                href="#"
-                                                className="font-medium text-hybrida-fuchsia underline"
-                                            >
-                                                Política de Cookies
+                                                Política de privacidad.
                                             </a>
-                                            .
                                         </p>
                                         {globalError && (
                                             <div className="mt-3 text-sm text-red-600">
