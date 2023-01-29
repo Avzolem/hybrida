@@ -2,9 +2,12 @@ import MainLayout from "@/components/layouts/MainLayout";
 
 export default function Candymachine() {
     return (
-        <MainLayout>
+        <MainLayout
+            title="Candy Machine"
+            description="Arte digital de Artistas de Nuestra Comunidad UACH. "
+        >
             <div className="bg-white">
-                <div className="mx-auto max-w-2xl py-16 px-4 text-center sm:py-20 sm:px-6 lg:px-8 justify-center">
+                <div className="mx-auto max-w-2xl justify-center py-16 px-4 text-center sm:py-20 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">
                         <span className="block"> Candy Machine NFT's </span>
 
@@ -14,7 +17,7 @@ export default function Candymachine() {
                     </h2>
 
                     <div className="mt-8 flex justify-center">
-                        <div class="w-96 carousel rounded-box justify-center">
+                        <div class="carousel rounded-box w-96 justify-center">
                             <div class="carousel-item w-full">
                                 <img
                                     src="/images/nft2.png"
@@ -25,7 +28,7 @@ export default function Candymachine() {
                         </div>
                     </div>
 
-                    <p className="mt-4 font-bold text-lg leading-6  text-gray-500">
+                    <p className="mt-4 text-lg font-bold leading-6  text-gray-500">
                         Te gusta el arte digital? Te gusta la tecnología de
                         blockchain?
                         <br />

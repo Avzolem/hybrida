@@ -41,7 +41,10 @@ const people = [
 
 export default function Home() {
     return (
-        <MainLayout title="artistas" description="página de artistas">
+        <MainLayout
+            title="artistas"
+            description="Conoce a quienes dan vida a nuestro metaverso y conecta con ellos."
+        >
             <div className="bg-[#0a012c]">
                 <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8 lg:py-24">
                     <div className="space-y-12">

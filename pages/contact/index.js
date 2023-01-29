@@ -79,7 +79,10 @@ const ContactPage = () => {
     };
 
     return (
-        <MainLayout>
+        <MainLayout
+            title="Registro"
+            description="Registrate en la convocatoria Hybrida 2023 de la UACH"
+        >
             <div className="overflow-hidden bg-hybrida-bgblue py-16 px-4 sm:px-6 lg:px-8 lg:py-24">
                 <div className="relative mx-auto max-w-xl">
                     <svg
