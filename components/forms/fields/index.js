@@ -6,5 +6,15 @@ import TextArea from "@/components/forms/fields/TextArea";
 import Select from "@/components/forms/fields/Select";
 import CoverImage from "@/components/forms/fields/CoverImage";
 import Switch from "@/components/forms/fields/Switch";
+import PhoneInput from "@/components/forms/fields/PhoneInput";
 
-export { Switch, Divider, CheckBox, Input, TextArea, Select, CoverImage };
+export {
+  Switch,
+  Divider,
+  CheckBox,
+  Input,
+  TextArea,
+  Select,
+  CoverImage,
+  PhoneInput,
+};

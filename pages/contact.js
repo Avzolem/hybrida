@@ -1,36 +1,61 @@
 import MainLayout from "@/components/layouts/MainLayout";
-import classNames from "@/utils/classNames";
-import { useState } from "react";
-import { Switch } from "@headlessui/react";
+import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
+import axios from "axios";
+import parsePhoneNumber, { isValidPhoneNumber } from "libphonenumber-js";
+import classNames from "@/utils/classNames";
+import {
+    Input,
+    PhoneInput,
+    TextArea,
+    CheckBox,
+} from "@/components/forms/fields";
 
 const ContactPage = () => {
     const [agreed, setAgreed] = useState(false);
-    const [globalError, setGlobalError] = useState("");
     const {
         register,
+        clearErrors,
+        setError,
         handleSubmit,
+        watch,
         formState: { errors },
     } = useForm();
 
+    const countryWatch = watch("phoneCountry");
+    const phoneWatch = watch("phone");
+
+    const validatePhone = async (phone, country) => {
+        const isValidNumber = isValidPhoneNumber(phone, country);
+        if (!isValidNumber) {
+            setError("phone", {
+                type: "manual",
+                message: "Número de teléfono no válido",
+            });
+        } else {
+            clearErrors("phone");
+        }
+    };
+
+    useEffect(() => {
+        //every time the country select changes, we need to revalidate...
+        if (countryWatch) {
+            validatePhone(phoneWatch, countryWatch);
+        }
+    }, [countryWatch]);
+
     // SUBMIT FUNCTION
     const onSubmit = async (data) => {
-        setGlobalError("");
-        if (!agreed) {
-            setGlobalError("Debes aceptar los terminos y condiciones");
-            return;
-        }
-
         //DO WHATEVER YOU WANT HERE
         console.log("SUBMITED DATA =>", data);
     };
 
     return (
         <MainLayout>
-            <div className="bg-hybrida-bgblue py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24">
-                <div className="relative max-w-xl mx-auto">
+            <div className="overflow-hidden bg-hybrida-bgblue py-16 px-4 sm:px-6 lg:px-8 lg:py-24">
+                <div className="relative mx-auto max-w-xl">
                     <svg
-                        className="absolute left-full transform translate-x-1/2"
+                        className="absolute left-full translate-x-1/2 transform"
                         width={404}
                         height={404}
                         fill="none"
@@ -63,7 +88,7 @@ const ContactPage = () => {
                         />
                     </svg>
                     <svg
-                        className="absolute right-full bottom-0 transform -translate-x-1/2"
+                        className="absolute right-full bottom-0 -translate-x-1/2 transform"
                         width={404}
                         height={404}
                         fill="none"
@@ -105,272 +130,148 @@ const ContactPage = () => {
                         </p>
                     </div>
                     <div className="mt-12">
-                        <form
-                            onSubmit={handleSubmit(onSubmit)}
-                            className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
-                            action="https://formsubmit.co/a28348111aa112f94fd494da82247a8c"
-                            method="POST"
-                        >
-                            <div>
-                                <label
-                                    htmlFor="firstName"
-                                    className="block text-sm font-medium text-hybrida-fuchsia"
-                                >
-                                    Nombre
-                                </label>
-                                <div className="mt-1">
-                                    <input
-                                        required
-                                        type="text"
-                                        name="firstName"
-                                        id="firstName"
-                                        autoComplete="given-name"
-                                        className="py-3 px-4 block w-full shadow-sm focus:ring-hybrida-fuchsia focus:border-hybrida-fuchsia border-gray-300 rounded-md"
-                                        {...register("firstName", {
+                        <form onSubmit={handleSubmit(onSubmit)} className="">
+                            <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 lg:gap-x-6 ">
+                                <Input
+                                    label="Nombre"
+                                    name="firstName"
+                                    type="text"
+                                    register={{
+                                        ...register("firstName", {
                                             required: {
                                                 value: true,
                                                 message: "Nombre es requerido",
                                             },
-                                        })}
-                                    />
-                                    {errors.firstName && (
-                                        <div className="mt-3 text-sm text-red-600">
-                                            {errors.firstName.message}
-                                        </div>
-                                    )}
-                                </div>
-                            </div>
-                            <div>
-                                <label
-                                    htmlFor="lastName"
-                                    className="block text-sm font-medium text-hybrida-fuchsia"
-                                >
-                                    Apellido
-                                </label>
-                                <div className="mt-1">
-                                    <input
-                                        required
-                                        type="text"
-                                        name="lastName"
-                                        id="lastName"
-                                        autoComplete="family-name"
-                                        className="py-3 px-4 block w-full shadow-sm focus:ring-text-hybrida-fuchsia focus:border-text-hybrida-fuchsia border-gray-300 rounded-md"
-                                        {...register("lastName", {
+                                        }),
+                                    }}
+                                    errorMessage={errors.firstName?.message}
+                                />
+
+                                <Input
+                                    label="Apellido"
+                                    name="lastName"
+                                    type="text"
+                                    register={{
+                                        ...register("lastName", {
                                             required: {
                                                 value: true,
                                                 message:
                                                     "Apellido es requerido",
                                             },
-                                        })}
-                                    />
-                                    {errors.lastName && (
-                                        <div className="mt-3 text-sm text-red-600">
-                                            {errors.lastName.message}
-                                        </div>
-                                    )}
-                                </div>
+                                        }),
+                                    }}
+                                    errorMessage={errors.lastName?.message}
+                                />
                             </div>
 
-                            <div className="sm:col-span-2">
-                                <label
-                                    htmlFor="email"
-                                    className="block text-sm font-medium text-hybrida-fuchsia"
-                                >
-                                    Email
-                                </label>
-                                <div className="mt-1">
-                                    <input
-                                        required
-                                        id="email"
-                                        name="email"
-                                        type="email"
-                                        autoComplete="email"
-                                        className="py-3 px-4 block w-full shadow-sm focus:ring-hybrida-fuchsia focus:border-hybrida-fuchsia border-gray-300 rounded-md"
-                                        {...register("email", {
+                            <div className="w-full">
+                                <Input
+                                    label="Email"
+                                    name="email"
+                                    type="text"
+                                    register={{
+                                        ...register("email", {
                                             required: {
                                                 value: true,
                                                 message: "Email es requerido",
                                             },
-                                        })}
-                                    />
-                                    {errors.email && (
-                                        <div className="mt-3 text-sm text-red-600">
-                                            {errors.email.message}
-                                        </div>
-                                    )}
-                                </div>
+                                            pattern: {
+                                                value: /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/i,
+                                                message: "Email Inválido",
+                                            },
+                                        }),
+                                    }}
+                                    errorMessage={errors.email?.message}
+                                />
                             </div>
-                            <div className="sm:col-span-2">
-                                <label
-                                    htmlFor="phone"
-                                    className="block text-sm font-medium text-hybrida-fuchsia"
-                                >
-                                    Número telefónico
-                                </label>
-                                <div className="mt-1 relative rounded-md shadow-sm">
-                                    <div className="absolute inset-y-0 left-0 flex items-center">
-                                        <label
-                                            htmlFor="country"
-                                            className="sr-only"
-                                        >
-                                            País
-                                        </label>
-                                        <select
-                                            id="country"
-                                            name="country"
-                                            className="h-full py-0 pl-4 pr-8 border-transparent bg-transparent text-gray-500 focus:ring-hybrida-fuchsia focus:border-hybrida-fuchsia rounded-md"
-                                        >
-                                            <option>MX</option>
-                                            <option>CA</option>
-                                            <option>US</option>
-                                        </select>
-                                    </div>
-                                    <input
-                                        required
-                                        type="text"
-                                        name="phone"
-                                        id="phone"
-                                        autoComplete="tel"
-                                        className="py-3 px-4 block w-full pl-20 focus:ring-hybrida-fucsia focus:border-hybrida-fuchsia border-gray-300 rounded-md"
-                                        placeholder="+1 (555) 987-6543"
-                                        {...register("phone", {
+
+                            <PhoneInput
+                                label="Número de teléfono"
+                                name="phone"
+                                type="tel"
+                                onChange={(e) => {
+                                    validatePhone(e.target.value, countryWatch);
+                                }}
+                                selectRegister={{
+                                    ...register("phoneCountry", {
+                                        required: {
+                                            value: true,
+                                            message:
+                                                "El código de país es requerido",
+                                        },
+                                    }),
+                                }}
+                                register={{
+                                    ...register("phone", {
+                                        required: {
+                                            value: true,
+                                            message:
+                                                "El número de teléfono es requerido",
+                                        },
+                                    }),
+                                }}
+                                errorMessage={errors.phone?.message}
+                            />
+
+                            <div className="w-full">
+                                <Input
+                                    label="Escuela/Organización"
+                                    name="company"
+                                    type="text"
+                                    register={{
+                                        ...register("company", {
                                             required: {
                                                 value: true,
                                                 message:
-                                                    "El numero de teléfono es requerido",
+                                                    "Este campo es requerido",
                                             },
-                                        })}
-                                    />
-                                </div>
-                                {errors.phone && (
-                                    <div className="mt-3 text-sm text-red-600">
-                                        {errors.phone.message}
-                                    </div>
-                                )}
+                                        }),
+                                    }}
+                                    errorMessage={errors.company?.message}
+                                />
                             </div>
-                            <div className="sm:col-span-2">
-                                <label
-                                    htmlFor="company"
-                                    className="block text-sm font-medium text-hybrida-fuchsia"
-                                >
-                                    Escuela/Organizacion
-                                </label>
-                                <div className="mt-1">
-                                    <input
-                                        required
-                                        type="text"
-                                        name="company"
-                                        id="company"
-                                        autoComplete="organization"
-                                        className="py-3 px-4 block w-full shadow-sm focus:ring-hybrida-fuchsia focus:border-hybrida-fuchsia border-gray-300 rounded-md"
-                                        {...register("company", {
+
+                            <div className="w-full">
+                                <TextArea
+                                    label="Sube tu obra a la nube y copia aquí el enlace para compartir, si requiere algún software ó plugin extra para visualizarse, comentánoslo.
+                                    "
+                                    name="message"
+                                    type="text"
+                                    register={{
+                                        ...register("message", {
                                             required: {
                                                 value: true,
                                                 message:
-                                                    "La Escuela/Organizacion es requerida",
+                                                    "Este campo es requerido",
                                             },
-                                        })}
-                                    />
-                                    {errors.company && (
-                                        <div className="mt-3 text-sm text-red-600">
-                                            {errors.company.message}
-                                        </div>
-                                    )}
-                                </div>
+                                        }),
+                                    }}
+                                    errorMessage={errors.message?.message}
+                                />
                             </div>
-                            <div className="sm:col-span-2">
-                                <label
-                                    htmlFor="message"
-                                    className="block text-sm font-medium text-hybrida-fuchsia"
-                                >
-                                    Sube tu obra a la nube y copia aquí el
-                                    enlace para compartir, si requiere algún
-                                    software ó plugin extra para visualizarse,
-                                    comentánoslo.
-                                </label>
-                                <div className="mt-1">
-                                    <textarea
-                                        required
-                                        id="message"
-                                        name="message"
-                                        rows={4}
-                                        className="py-3 px-4 block w-full shadow-sm focus:ring-hybrida-fuchsia focus:border-hybrida-fuchsia border border-gray-300 rounded-md"
-                                        defaultValue={""}
-                                        {...register("message", {
+
+                            <div className="w-full">
+                                <CheckBox
+                                    label="Acepto los términos y condiciones"
+                                    description="Al registrarte aceptas los términos y Condiciones"
+                                    name="terms"
+                                    register={{
+                                        ...register("terms", {
                                             required: {
                                                 value: true,
-                                                message: "Mensaje es requerido",
-                                            },
-                                            min: {
-                                                value: 20,
-                                                message: "Minimo 20 caracteres",
-                                            },
-                                            max: {
-                                                value: 280,
                                                 message:
-                                                    "Maximo 280 caracteres",
+                                                    "Debes aceptar los términos",
                                             },
-                                        })}
-                                    />
-                                    {errors.message && (
-                                        <div className="mt-3 text-sm text-red-600">
-                                            {errors.message.message}
-                                        </div>
-                                    )}
-                                </div>
+                                        }),
+                                    }}
+                                    errorMessage={errors.terms?.message}
+                                />
                             </div>
-                            <div className="sm:col-span-2">
-                                <div className="flex items-start">
-                                    <div className="flex-shrink-0">
-                                        <Switch
-                                            checked={agreed}
-                                            onChange={setAgreed}
-                                            className={classNames(
-                                                agreed
-                                                    ? "bg-hybrida-fuchsia"
-                                                    : "bg-gray-200",
-                                                "relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-hybrida-fuchsia"
-                                            )}
-                                        >
-                                            <span className="sr-only">
-                                                Acuerdo de políticas de
-                                                privacidad
-                                            </span>
-                                            <span
-                                                aria-hidden="true"
-                                                className={classNames(
-                                                    agreed
-                                                        ? "translate-x-5"
-                                                        : "translate-x-0",
-                                                    "inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200"
-                                                )}
-                                            />
-                                        </Switch>
-                                    </div>
-                                    <div className="ml-3">
-                                        <p className="text-base text-white">
-                                            Seleccionando esto, estás de acuerdo
-                                            con nuestra{" "}
-                                            <a
-                                                href="/privacy"
-                                                className="font-medium text-hybrida-fuchsia underline"
-                                            >
-                                                Política de privacidad.
-                                            </a>
-                                        </p>
-                                        {globalError && (
-                                            <div className="mt-3 text-sm text-red-600">
-                                                {globalError}
-                                            </div>
-                                        )}
-                                    </div>
-                                </div>
-                            </div>
+
                             <div className="sm:col-span-2">
                                 <button
-                                    onSubmit={handleSubmit(onSubmit)}
                                     type="submit"
-                                    className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-hybrida-fuchsia hover:bg-fuchsia-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                                    className="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-hybrida-fuchsia px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-fuchsia-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
                                 >
                                     Entrar en el Metaverso!
                                 </button>
