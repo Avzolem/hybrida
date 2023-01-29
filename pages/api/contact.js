@@ -2,8 +2,10 @@
 import nc from "next-connect";
 import ncoptions from "@/config/ncoptions";
 import axios from "axios";
-import FormData from "form-data";
 const nodemailer = require("nodemailer");
+import Sheet from "@/lib/Spreadsheet";
+const sheetId = process.env.GOOGLE_SHEET_ID;
+const submissionsSheetIndex = 0;
 
 const handler = nc(ncoptions);
 
@@ -16,18 +18,26 @@ handler.post(async (req, res) => {
     const { data } = req.body;
 
     const { firstName, lastName, email, phone, company, message } = data;
-    console.log(data);
-
-    const parsedData = {
-        firstName,
-        lastName,
-        email,
-        phone,
-        company,
-        message,
-    };
 
     try {
+        //send data to google sheets
+        const sheet = new Sheet(sheetId);
+        await sheet.load();
+
+        await sheet.addRows(
+            [
+                {
+                    firstName,
+                    lastName,
+                    email,
+                    phone,
+                    company,
+                    message,
+                },
+            ],
+            submissionsSheetIndex
+        );
+
         //send parsedData to email
         let transporter = nodemailer.createTransport({
             host: process.env.SMTP_HOST,
@@ -41,30 +51,27 @@ handler.post(async (req, res) => {
 
         const template = `
           <p><strong>Nombre</strong>: ${firstName}</p>
-          </br>  
+          </br>
           <p><strong>Apellido</strong>: ${lastName}</p>
-          </br>  
+          </br>
           <p><strong>Email</strong>: ${email}</p>
-          </br>  
+          </br>
           <p><strong>Telefono</strong>: ${phone}</p>
-          </br>  
+          </br>
           <p><strong>Escuela/Organizacion</strong>: ${company}</p>
-          </br>  
+          </br>
           <p><strong>Mensaje</strong>: ${message}</p>
-          </br> 
+          </br>
         `;
 
-        let info = await transporter.sendMail({
+        await transporter.sendMail({
             from: "hybrida@uach.mx", // sender address
             to: "hybrida@uach.mx", // list of receivers
             subject: "Nuevo Registro Hybrida Uach ✔", // Subject line
             html: template,
         });
 
-        console.log("Message sent: %s", info.messageId);
-
         res.status(200).json({ message: "success" });
-        //send parsedData to google sheets
     } catch (error) {
         console.error(error);
         res.status(500).json({ message: "error" });

@@ -67,14 +67,15 @@ const ContactPage = () => {
             const dataToSend = { ...data, phone: phoneParsed.number };
             await axios.post("/api/contact", { data: dataToSend });
             toast.success("Formulario enviado correctamente");
-            console.log("dataToSend =>", dataToSend);
+
+            setTimeout(() => {
+                window.location.href = "/contact/success";
+            }, 2000);
         } catch (error) {
             toast.error("Ocurrio un error al enviar el formulario");
         }
 
         setSubmitLoading(false);
-
-        //parse phone
     };
 
     return (

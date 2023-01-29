@@ -19,7 +19,6 @@
     "cloudinary": "^1.29.0",
     "daisyui": "^2.19.1",
     "date-fns": "^2.28.0",
-    "form-data": "^4.0.0",
     "google-spreadsheet": "^3.3.0",
     "heroicons": "^2.0.13",
     "libphonenumber-js": "^1.10.18",
