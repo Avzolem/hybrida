@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "hybrida-376207",
+  "private_key_id": "2d60c1097c69cfde00f7af0d8c30110624847369",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC92b4WsNE1MPcu\nucE4twqGkzWU2+v6bLYN/ZDYttGje/Yhp+1CYyUutrIO7896bNph6f3sgLFjp4js\nETHoUz9kZIioCEZwXcAPnrlLz8KightcjOavnl/vpMu2RLC7TWpmbTSiJ6XXSl7X\nkE2qJuJ2mLHTfco1YiRl02mt3hMF4r/maAo86fHp6sa4mkHjHXuDFpmsVWrJ6uQ8\nMwS500OCOr7ASx/QUnJDeR1hne+RuWxefnQo8eNLWjKIZo76DTxExPDxjxQUCoZ6\n/9xbe/3O16ffQimXSFo8/+V0bh+/VVCuC7gQhb6vYwlcI7WyoZzCkqlnxNWAD5P9\nvUhjJTJZAgMBAAECggEACusP1Iw8q9tyC7zhENrt/wlORo5TRuajnbBceSoiak2B\nvTPEIFJFXCdjnBpMi1ThRkpHsSdBjGKhLDpc7WiEN8jUVx2Kt4Gcvwk4zNRY9DGZ\nUzxDNAxephCLKqNOqqbsHJHhOgYfsn7zb2A8JzHvSjTD3U7ZpzJKt5Rt+nLQE0F6\ntmGdYnOaS2ay1I7MaeXKCPkIH6SC1MzldG2+ji8yTrL0XNTBG2yHBOQaGM1QfggY\nJRgLCLZO2lPWmcYfIkE6eO63O3f/osSkufR6DNf85DfzJMuHyQfcdXHVsO9G24Ct\nLDDjU353kHHvmDsdYoniYX+N9sQVVRVe+G5uQz//kQKBgQDnppEb56rKBIUs8nYA\nekFcC362yNcsMQNMF6QukE3W+IEi5QehKBKY2o3TApBKkd/sR1S1/HlX1qJLyLvl\nBId1X1ZDMwgmb9GyHLx0fAmkjJfhmLssmw/8vwGyROVvUiP6DM9oqKJh+p0mlnJC\nnkMTalv+hdMTP203nfmnAJ7e9QKBgQDRzmMAzayYpa+e2cvj5qN66DROKRIUZXAZ\n67F6Z1j4IDk7Jj3/SlZek9aBzXemz1AmJfUYHqjMnk7UgP43AjMQ2lki1ISuA5D1\nnA8a5RTnvwiYyOSLycca6EWTyYQ4bCM7iamP+WRpNblRRVbd8ftxaO1HoEKUdhwB\npJxBkV+fVQKBgHlu3LSnHeWmtvVX6LnZXLfWosdIw1s8GkFiR0PNi7B8Np3HN9eo\nPQ95ykzqFB+zFpIy1lpMDoQYVJ2rjavBUw0ZPAwgDU6w4VkgLT5W42sp9FhjiwMY\nCipxKn98FFXl1kw3OObhN7Zq/MSEq0L22ays3aqwFnUJk8RLANslvSKdAoGAE9Q/\nwymtMFgoewj2njmEJe+gUerLzKWxrKF8CqeN3xWckxyQK3qpIxMx6N60ek2Js7FO\nstLi/UPRC4CNhkFs9iDM39/aEmA/6Rawzsfr6+NAOsBx6UxOxxpAyTD4kCSYR95A\n6lyVwuPS+f1lsmBWdWeHVYeuAz4Oc5FNO10z/mkCgYBCKQ3PHOvFHQnm4lTg1ot+\n2Fww5vYjR9Oxw/GpvcVhZVc07xi82FfR7SR0oX9BtDarFXO11jGmCovQxKM8ECpd\nAxGuw+tP0FwhIMP5KvQje1gDPM0B/JWBSBHYwG0PWwYvdnAurbIdUjMVGMkjyaWz\nB8RPyhQgGcZyqd1qdr0I/w==\n-----END PRIVATE KEY-----\n",
+  "client_email": "hybrida@hybrida-376207.iam.gserviceaccount.com",
+  "client_id": "109439440082115601968",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/hybrida%40hybrida-376207.iam.gserviceaccount.com"
+}
