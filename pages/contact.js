@@ -3,7 +3,8 @@ import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import parsePhoneNumber, { isValidPhoneNumber } from "libphonenumber-js";
-import classNames from "@/utils/classNames";
+import LoadingCircle from "@/components/common/LoadingCircle";
+import toast from "react-hot-toast";
 import {
     Input,
     PhoneInput,
@@ -12,7 +13,6 @@ import {
 } from "@/components/forms/fields";
 
 const ContactPage = () => {
-    const [agreed, setAgreed] = useState(false);
     const {
         register,
         clearErrors,
@@ -21,6 +21,8 @@ const ContactPage = () => {
         watch,
         formState: { errors },
     } = useForm();
+
+    const [submitLoading, setSubmitLoading] = useState(false);
 
     const countryWatch = watch("phoneCountry");
     const phoneWatch = watch("phone");
@@ -47,7 +49,32 @@ const ContactPage = () => {
     // SUBMIT FUNCTION
     const onSubmit = async (data) => {
         //DO WHATEVER YOU WANT HERE
-        console.log("SUBMITED DATA =>", data);
+        setSubmitLoading(true);
+        const { phoneCountry, phone } = data;
+
+        //validate phone
+        const isValidNumber = isValidPhoneNumber(phone, phoneCountry);
+
+        if (!isValidNumber) {
+            toast.error("Número de teléfono no válido");
+            return;
+        }
+
+        const phoneParsed = parsePhoneNumber(phone, phoneCountry);
+
+        try {
+            //send data to backend using axios
+            const dataToSend = { ...data, phone: phoneParsed.number };
+            await axios.post("/api/contact", { data: dataToSend });
+            toast.success("Formulario enviado correctamente");
+            console.log("dataToSend =>", dataToSend);
+        } catch (error) {
+            toast.error("Ocurrio un error al enviar el formulario");
+        }
+
+        setSubmitLoading(false);
+
+        //parse phone
     };
 
     return (
@@ -272,8 +299,15 @@ const ContactPage = () => {
                                 <button
                                     type="submit"
                                     className="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-hybrida-fuchsia px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-fuchsia-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
+                                    disabled={submitLoading}
                                 >
-                                    Entrar en el Metaverso!
+                                    {submitLoading ? (
+                                        <div>
+                                            <LoadingCircle />
+                                        </div>
+                                    ) : (
+                                        "Entrar al metaverso!"
+                                    )}
                                 </button>
                                 <input
                                     type="hidden"
