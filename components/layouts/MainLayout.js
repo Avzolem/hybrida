@@ -4,17 +4,23 @@ import Footer from "@/components/common/Footer";
 import Seo from "@/components/common/Seo";
 import { Toaster } from "react-hot-toast";
 
-const Layout = ({ title, description, children, ...rest }) => {
+const Layout = ({
+    title,
+    description,
+    children,
+    childrenClassName,
+    ...rest
+}) => {
     return (
         <>
             <Head>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Seo subtitle={title} description={description} />
-            <div className="mb-auto flex w-full flex-col" {...rest}>
+            <div className="flex min-h-screen w-full flex-col" {...rest}>
                 <Header />
                 <Toaster position="bottom-center" reverseOrder={false} />
-                <div className="my-0">{children}</div>
+                <div className={`my-0 ${childrenClassName}`}>{children}</div>
                 <Footer />
             </div>
         </>
