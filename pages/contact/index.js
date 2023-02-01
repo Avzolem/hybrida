@@ -10,6 +10,7 @@ import {
     PhoneInput,
     TextArea,
     CheckBox,
+    Select,
 } from "@/components/forms/fields";
 
 const ContactPage = () => {
@@ -153,16 +154,19 @@ const ContactPage = () => {
                     </svg>
                     <div className="text-center">
                         <h2 className="text-3xl font-bold tracking-tight text-hybrida-fuchsia sm:text-4xl">
-                            Registro a la Convocatoria Hybrida 2023
+                            APLICA A HYBRIDA 1
                         </h2>
                         <p className="mt-4 text-lg leading-6 text-white">
-                            Participa en la convocatoria Hybrida 2023 y
-                            conviértete en un agente de evolucion para el arte.
+                            Para aplicar: 1. Revisa detenidamente los términos
+                            de la convocatoria. 2. Llena el formato que se
+                            presenta a continuación.
                         </p>
                     </div>
                     <div className="mt-12">
+                        {/* // FORMULARIO DE REGISTRO */}
                         <form onSubmit={handleSubmit(onSubmit)} className="">
                             <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 lg:gap-x-6 ">
+                                {/* NOMBRE  */}
                                 <Input
                                     label="Nombre"
                                     name="firstName"
@@ -177,7 +181,7 @@ const ContactPage = () => {
                                     }}
                                     errorMessage={errors.firstName?.message}
                                 />
-
+                                {/* APELLIDO  */}
                                 <Input
                                     label="Apellido"
                                     name="lastName"
@@ -196,6 +200,7 @@ const ContactPage = () => {
                             </div>
 
                             <div className="w-full">
+                                {/* EMAIL  */}
                                 <Input
                                     label="Email"
                                     name="email"
@@ -215,7 +220,7 @@ const ContactPage = () => {
                                     errorMessage={errors.email?.message}
                                 />
                             </div>
-
+                            {/* TELEFONO */}
                             <PhoneInput
                                 label="Número de teléfono"
                                 name="phone"
@@ -244,13 +249,57 @@ const ContactPage = () => {
                                 errorMessage={errors.phone?.message}
                             />
 
+                            {/* CATEGORIA DE TU TRABAJO  */}
+
                             <div className="w-full">
                                 <Input
-                                    label="Escuela/Organización"
-                                    name="company"
+                                    label="Categoria de tu trabajo (opcional):"
+                                    name="category"
                                     type="text"
                                     register={{
-                                        ...register("company", {
+                                        ...register("category", {}),
+                                    }}
+                                    errorMessage={errors.category?.message}
+                                />
+                            </div>
+
+                            {/* AQUI HAY QUE SUBIR TRES EJEMPLOS DE TU TRABAJO */}
+
+                            <div className="w-full">
+                                <Input
+                                    label="Ejemplos de tu trabajo: (Tres ejemplos, PNG, JPG, GIF. Tamaño Máx. 3 MB c/u)"
+                                    name="category"
+                                    type="text"
+                                    register={{
+                                        ...register("category", {}),
+                                    }}
+                                    errorMessage={errors.category?.message}
+                                />
+                            </div>
+
+                            {/* LINK A PORTAFOLIO */}
+
+                            <div className="w-full">
+                                <TextArea
+                                    label="Link a portafolio o descarga (opcional):"
+                                    name="portfolio"
+                                    type="text"
+                                    register={{
+                                        ...register("message", {}),
+                                    }}
+                                    errorMessage={errors.message?.message}
+                                />
+                            </div>
+                            {/* MOTIVOS PARA PARTICIPAR */}
+
+                            <div className="w-full">
+                                <TextArea
+                                    minlength="3"
+                                    label="Motivos para participar: (obligatorio, min 300 caracteres)"
+                                    name="motivos"
+                                    type="text"
+                                    register={{
+                                        ...register("motivos", {
                                             required: {
                                                 value: true,
                                                 message:
@@ -258,18 +307,18 @@ const ContactPage = () => {
                                             },
                                         }),
                                     }}
-                                    errorMessage={errors.company?.message}
+                                    errorMessage={errors.message?.message}
                                 />
                             </div>
+                            {/*COMO TE ENTERASTE  */}
 
                             <div className="w-full">
                                 <TextArea
-                                    label="Sube tu obra a la nube y copia aquí el enlace para compartir, si requiere algún software ó plugin extra para visualizarse, comentánoslo.
-                                    "
-                                    name="message"
+                                    label="¿Cómo te enteraste de HYBRIDA 1?"
+                                    name="comoteenteraste"
                                     type="text"
                                     register={{
-                                        ...register("message", {
+                                        ...register("comoteenteraste", {
                                             required: {
                                                 value: true,
                                                 message:
@@ -281,10 +330,32 @@ const ContactPage = () => {
                                 />
                             </div>
 
+                            {/*ERES ALUMNO DE LA UACH?  */}
+
+                            <div className="w-full">
+                                <Select
+                                    type="text"
+                                    label="¿¿Eres alumno, egresado o trabajas en la UACH?"
+                                    name="comoteenteraste"
+                                    register={{
+                                        ...register("comoteenteraste", {
+                                            required: {
+                                                value: true,
+                                                message:
+                                                    "Este campo es requerido",
+                                            },
+                                        }),
+                                    }}
+                                    errorMessage={errors.message?.message}
+                                />
+                            </div>
+
+                            {/* CHECKBOXES */}
+
+                            {/* CHECKBOX 1 */}
                             <div className="w-full">
                                 <CheckBox
-                                    label="Acepto los términos y condiciones"
-                                    description="Al registrarte aceptas los términos y Condiciones"
+                                    label="Manifiesto que la obra adjunta es mi trabajo original."
                                     name="terms"
                                     register={{
                                         ...register("terms", {
@@ -298,6 +369,61 @@ const ContactPage = () => {
                                     errorMessage={errors.terms?.message}
                                 />
                             </div>
+                            {/* CHECKBOX 2*/}
+                            <div className="w-full ">
+                                <div className="flex">
+                                    <CheckBox
+                                        label="He leído y acepto los términos de la "
+                                        name="terms"
+                                        register={{
+                                            ...register("termstwo", {
+                                                required: {
+                                                    value: true,
+                                                    message:
+                                                        "Debes aceptar los términos",
+                                                },
+                                            }),
+                                        }}
+                                        errorMessage={errors.termstwo?.message}
+                                    />
+                                    <a
+                                        href="/privacy"
+                                        className="block text-sm font-medium text-blue-300 hover:text-blue-100"
+                                    >
+                                        {" "}
+                                        &nbsp; Convocatoria
+                                    </a>
+                                </div>
+                            </div>
+                            {/* CHECKBOX 3 */}
+                            <div className="w-full">
+                                <div className="flex">
+                                    <CheckBox
+                                        label="Acepto los términos del "
+                                        name="terms"
+                                        register={{
+                                            ...register("termsthree", {
+                                                required: {
+                                                    value: true,
+                                                    message:
+                                                        "Debes aceptar los términos",
+                                                },
+                                            }),
+                                        }}
+                                        errorMessage={
+                                            errors.termsthree?.message
+                                        }
+                                    />
+                                    <a
+                                        href="/privacy"
+                                        className="block text-sm font-medium text-blue-300 hover:text-blue-100"
+                                    >
+                                        {" "}
+                                        &nbsp; Aviso de Privacidad
+                                    </a>
+                                </div>
+                            </div>
+                            {/* BOTON  */}
 
                             <div className="sm:col-span-2">
                                 <button

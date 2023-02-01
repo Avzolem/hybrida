@@ -17,7 +17,7 @@ handler.use(async (req, res, next) => {
 handler.post(async (req, res) => {
     const { data } = req.body;
 
-    const { firstName, lastName, email, phone, company, message } = data;
+    const { firstName, lastName, email, phone, category, message } = data;
 
     try {
         //send data to google sheets
@@ -31,7 +31,7 @@ handler.post(async (req, res) => {
                     lastName,
                     email,
                     phone,
-                    company,
+                    category,
                     message,
                 },
             ],
@@ -58,7 +58,7 @@ handler.post(async (req, res) => {
           </br>
           <p><strong>Telefono</strong>: ${phone}</p>
           </br>
-          <p><strong>Escuela/Organizacion</strong>: ${company}</p>
+          <p><strong>Escuela/Organizacion</strong>: ${category}</p>
           </br>
           <p><strong>Mensaje</strong>: ${message}</p>
           </br>

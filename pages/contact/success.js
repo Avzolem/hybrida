@@ -8,13 +8,50 @@ const ContactPage = () => {
                     <div className="flex h-screen items-center justify-center">
                         <div className="rounded-xl bg-white px-12 text-center">
                             <h2 className="pt-20 text-3xl font-bold tracking-tight text-hybrida-fuchsia sm:text-4xl">
-                                Registro a la Convocatoria Hybrida 2023
+                                ¡Aplicación enviada!
                             </h2>
                             <p className="mt-4 pb-6  text-lg leading-6 text-black">
-                                Gracias por tu interés en participar en la
-                                convocatoria Hybrida 2023. Te contactaremos
-                                pronto.
+                                <h2>
+                                    Gracias por tu interés en participar en la
+                                    convocatoria Hybrida 1.&nbsp; En un periodo
+                                    de 24 a 72 horas recibirás un correo de
+                                    confirmación en la dirección proporcionada.
+                                </h2>
+                                <br />
+                                <h2>Para preguntas e información adicional:</h2>
+                                <br />
+
+                                <div className="text-center text-sm">
+                                    <div className="flex justify-center">
+                                        <p>Escribenos un correo a</p> &nbsp;
+                                        <a href="mailto:hybrida@uach.mx">
+                                            <p class="font-bold text-sky-400/100">
+                                                hybrida@uach.mx
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div className="flex justify-center">
+                                        <p>Envía mensaje vía Instagram a</p>{" "}
+                                        &nbsp;
+                                        <a href="https://www.instagram.com/hybrida.uach/ ">
+                                            <p class="font-bold text-pink-400/100">
+                                                @hybrida.uach
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div className="flex justify-center">
+                                        <p>Envía mensaje vía Discord </p> &nbsp;
+                                        <a href="https://discord.gg/6g7rZTsaCP">
+                                            <p class="font-bold text-purple-600">
+                                                @hybridauach
+                                            </p>
+                                        </a>
+                                        &nbsp;
+                                        <p>en el canal #Preguntas</p> &nbsp;
+                                    </div>
+                                </div>
                             </p>
+
                             <div className="img">
                                 <img
                                     src="/images/sobre.png"
