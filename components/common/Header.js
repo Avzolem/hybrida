@@ -13,6 +13,7 @@ const logoUrl = "/images/hybrida-logo.svg";
 const navigation = {
     categories: [],
     pages: [
+        { name: "Cronograma", href: "/timeline" },
         { name: "Artistas", href: "/artistas" },
         { name: "Contactanos", href: "/contact" },
         { name: "Candy Machine", href: "/candymachine" },

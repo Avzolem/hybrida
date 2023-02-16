@@ -12,7 +12,7 @@ const Layout = ({
     ...rest
 }) => {
     return (
-        <>
+        <div class="absolute">
             <Head>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
@@ -23,7 +23,7 @@ const Layout = ({
                 <div className={`my-0 ${childrenClassName}`}>{children}</div>
                 <Footer />
             </div>
-        </>
+        </div>
     );
 };
 

@@ -20,6 +20,7 @@ const ParticlesBackground = () => {
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
+            z-index={1}
             options={{
                 background: {
                     color: {
