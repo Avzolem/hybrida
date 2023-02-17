@@ -27,10 +27,7 @@ export default function Home() {
                                 <div class="w-2/5 px-2 py-10 ">
                                     <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
                                         <div class="0 mb-2 flex justify-between text-white">
-                                            <div
-                                                id="titulo"
-                                                class="opacity-1 text-xl font-bold tracking-tight sm:text-2xl  md:text-3xl lg:text-4xl"
-                                            >
+                                            <div class="opacity-1 text-xl font-bold tracking-tight sm:text-2xl  md:text-3xl lg:text-4xl">
                                                 Apertura de convocatoria
                                             </div>
                                         </div>
@@ -75,7 +72,7 @@ export default function Home() {
                                 <div class="w-2/5 px-2 py-10 ">
                                     <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500/75 to-[#ec2e92]/50  px-4 py-5 shadow">
                                         <div class="mb-2 flex justify-between text-white">
-                                            <div class="font-bold">
+                                            <div class="text-xl font-bold sm:text-2xl  md:text-3xl lg:text-4xl">
                                                 Sesiones informativas
                                             </div>
                                         </div>
@@ -95,7 +92,7 @@ export default function Home() {
                                 <div class="w-2/5 px-2 py-10">
                                     <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
                                         <div class="mb-2 flex justify-between text-white">
-                                            <div class="font-bold">
+                                            <div class="text-xl font-bold sm:text-2xl  md:text-3xl lg:text-4xl">
                                                 Cierre de convocatoria
                                             </div>
                                         </div>
@@ -126,7 +123,7 @@ export default function Home() {
                                 {/* <!--line column--> */}
                                 <div class="flex  w-1/5 justify-center">
                                     <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
-                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white">
+                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center  font-bold leading-none  text-white ">
                                             <div>18 al 27</div>
                                             <div>Abril</div>
                                         </div>
@@ -136,7 +133,7 @@ export default function Home() {
                                 <div class="w-2/5 px-2 py-10 ">
                                     <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500/75 to-[#ec2e92]/50 px-4 py-5 shadow">
                                         <div class="mb-2 flex justify-between text-white">
-                                            <div class="font-bold">
+                                            <div class="text-xl font-bold sm:text-2xl  md:text-3xl lg:text-4xl">
                                                 Evaluación de propuestas
                                             </div>
                                         </div>
@@ -154,7 +151,7 @@ export default function Home() {
                                 <div class="w-2/5 px-2 py-10">
                                     <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
                                         <div class="mb-2 flex justify-between text-white">
-                                            <div class="font-bold">
+                                            <div class="text-xl font-bold sm:text-2xl  md:text-3xl lg:text-4xl">
                                                 Anuncio de personas
                                                 seleccionadas
                                             </div>
@@ -195,7 +192,7 @@ export default function Home() {
                                 <div class="w-2/5 px-2 py-10 ">
                                     <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500/75 to-[#ec2e92]/50 px-4 py-5 shadow">
                                         <div class="mb-2 flex justify-between text-white">
-                                            <div class="font-bold">
+                                            <div class="text-xl font-bold sm:text-2xl  md:text-3xl lg:text-4xl">
                                                 Inicio de etapa de formación
                                             </div>
                                         </div>
@@ -257,7 +254,7 @@ export default function Home() {
                                 <div class="w-2/5 px-2 py-10">
                                     <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
                                         <div class="mb-2 flex justify-between text-white">
-                                            <div class="font-bold">
+                                            <div class="text-xl font-bold sm:text-2xl  md:text-3xl lg:text-4xl">
                                                 Receso Vacacional
                                             </div>
                                         </div>
@@ -287,7 +284,7 @@ export default function Home() {
                                 {/* <!--line column--> */}
                                 <div class="flex  w-1/5 justify-center">
                                     <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
-                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white">
+                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center  font-bold leading-none  text-white ">
                                             <div>1 al 30</div>
                                             <div>Agosto</div>
                                         </div>
@@ -297,7 +294,7 @@ export default function Home() {
                                 <div class="w-2/5 px-2 py-10 ">
                                     <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500/75 to-[#ec2e92]/50 px-4 py-5 shadow">
                                         <div class="mb-2 flex justify-between text-white">
-                                            <div class="font-bold">
+                                            <div class="text-xl font-bold sm:text-2xl  md:text-3xl lg:text-4xl">
                                                 Reinicio y cierre de etapa de
                                                 formación
                                             </div>
@@ -315,7 +312,7 @@ export default function Home() {
                                 <div class="w-2/5 px-2 py-10">
                                     <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
                                         <div class="mb-2 flex justify-between text-white">
-                                            <div class="font-bold">
+                                            <div class="text-xl font-bold sm:text-2xl  md:text-3xl lg:text-4xl">
                                                 Premiación y lanzamiento
                                             </div>
                                         </div>
