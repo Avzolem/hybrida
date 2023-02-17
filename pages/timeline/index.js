@@ -18,20 +18,26 @@ export default function Home() {
                     crossorigin="anonymous"
                 />
 
-                <div class="z-[1] min-h-screen">
+                <div class="relative min-h-screen">
                     <div class="flex min-h-screen justify-center">
                         <div class="mx-auto w-2/3">
                             <div class="flex w-full flex-row">
                                 {/* <!-- left col --> */}
 
-                                <div class="w-2/5 px-2 py-10">
-                                    <div class="flex w-full flex-col rounded-lg bg-white px-4 py-5 shadow">
-                                        <div class="mb-2 flex justify-between text-gray-600">
-                                            <div class="text-white-900 text-4xl font-bold tracking-tight sm:text-3xl md:text-4xl">
+                                <div class="w-2/5 px-2 py-10 ">
+                                    <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
+                                        <div class="0 mb-2 flex justify-between text-white">
+                                            <div
+                                                id="titulo"
+                                                class="opacity-1 text-xl font-bold tracking-tight sm:text-2xl  md:text-3xl lg:text-4xl"
+                                            >
                                                 Apertura de convocatoria
                                             </div>
                                         </div>
-                                        <div class="text-gray-600">
+                                        <div
+                                            id="descriptic"
+                                            class="text-white  "
+                                        >
                                             Revisa la convocatoria. Aqui va un
                                             href
                                         </div>
@@ -39,8 +45,8 @@ export default function Home() {
                                 </div>
                                 {/* <!--line column--> */}
                                 <div class="flex  w-1/5 justify-center">
-                                    <div class="relative flex h-full w-1 items-center justify-center bg-fuchsia-300">
-                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-fuchsia-300 bg-white text-center font-bold leading-none ">
+                                    <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
+                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white ">
                                             <div>1</div>
                                             <div>Marzo</div>
                                         </div>
@@ -58,8 +64,8 @@ export default function Home() {
                                 <div class="w-2/5 px-2 py-10"></div>
                                 {/* <!--line column--> */}
                                 <div class="flex  w-1/5 justify-center">
-                                    <div class="relative flex h-full w-1 items-center justify-center bg-fuchsia-300">
-                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-fuchsia-300 bg-white text-center font-bold leading-none">
+                                    <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
+                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white">
                                             <div>8, 15 y 22</div>
                                             <div>Marzo</div>
                                         </div>
@@ -67,13 +73,13 @@ export default function Home() {
                                 </div>
                                 {/* <!--right column--> */}
                                 <div class="w-2/5 px-2 py-10 ">
-                                    <div class="flex w-full flex-col rounded-lg bg-white px-4 py-5 shadow">
-                                        <div class="mb-2 flex justify-between text-gray-600">
+                                    <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500/75 to-[#ec2e92]/50  px-4 py-5 shadow">
+                                        <div class="mb-2 flex justify-between text-white">
                                             <div class="font-bold">
                                                 Sesiones informativas
                                             </div>
                                         </div>
-                                        <div class="text-gray-600">
+                                        <div class="text-white">
                                             El horario y plataforma se
                                             notificarán por las redes sociales
                                             de la UACH.
@@ -87,21 +93,21 @@ export default function Home() {
                                 {/* <!-- left col --> */}
 
                                 <div class="w-2/5 px-2 py-10">
-                                    <div class="flex w-full flex-col rounded-lg bg-white px-4 py-5 shadow">
-                                        <div class="mb-2 flex justify-between text-gray-600">
+                                    <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
+                                        <div class="mb-2 flex justify-between text-white">
                                             <div class="font-bold">
                                                 Cierre de convocatoria
                                             </div>
                                         </div>
-                                        <div class="text-gray-600">
+                                        <div class="text-white">
                                             Привет Lorem ipsum dolor sit amet,
                                         </div>
                                     </div>
                                 </div>
                                 {/* <!--line column--> */}
                                 <div class="flex  w-1/5 justify-center">
-                                    <div class="relative flex h-full w-1 items-center justify-center bg-fuchsia-300">
-                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-fuchsia-300 bg-white text-center font-bold leading-none">
+                                    <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
+                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white">
                                             <div>31</div>
                                             <div>Marzo</div>
                                         </div>
@@ -119,8 +125,8 @@ export default function Home() {
                                 <div class="w-2/5 px-2 py-10"></div>
                                 {/* <!--line column--> */}
                                 <div class="flex  w-1/5 justify-center">
-                                    <div class="relative flex h-full w-1 items-center justify-center bg-fuchsia-300">
-                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-fuchsia-300 bg-white text-center font-bold leading-none">
+                                    <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
+                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white">
                                             <div>18 al 27</div>
                                             <div>Abril</div>
                                         </div>
@@ -128,13 +134,13 @@ export default function Home() {
                                 </div>
                                 {/* <!--right column--> */}
                                 <div class="w-2/5 px-2 py-10 ">
-                                    <div class="flex w-full flex-col rounded-lg bg-white px-4 py-5 shadow">
-                                        <div class="mb-2 flex justify-between text-gray-600">
+                                    <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500/75 to-[#ec2e92]/50 px-4 py-5 shadow">
+                                        <div class="mb-2 flex justify-between text-white">
                                             <div class="font-bold">
                                                 Evaluación de propuestas
                                             </div>
                                         </div>
-                                        <div class="text-gray-600">
+                                        <div class="text-white">
                                             Conoce al Jurado evaluador. Aqui va
                                             un href a contact
                                         </div>
@@ -146,22 +152,22 @@ export default function Home() {
                                 {/* <!-- left col --> */}
 
                                 <div class="w-2/5 px-2 py-10">
-                                    <div class="flex w-full flex-col rounded-lg bg-white px-4 py-5 shadow">
-                                        <div class="mb-2 flex justify-between text-gray-600">
+                                    <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
+                                        <div class="mb-2 flex justify-between text-white">
                                             <div class="font-bold">
                                                 Anuncio de personas
                                                 seleccionadas
                                             </div>
                                         </div>
-                                        <div class="text-gray-600">
+                                        <div class="text-white">
                                             Привет Lorem ipsum dolor sit amet,
                                         </div>
                                     </div>
                                 </div>
                                 {/* <!--line column--> */}
                                 <div class="flex  w-1/5 justify-center">
-                                    <div class="relative flex h-full w-1 items-center justify-center bg-fuchsia-300">
-                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-fuchsia-300 bg-white text-center font-bold leading-none">
+                                    <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
+                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white">
                                             <div>28</div>
                                             <div>Abril</div>
                                         </div>
@@ -178,8 +184,8 @@ export default function Home() {
                                 <div class="w-2/5 px-2 py-10"></div>
                                 {/* <!--line column--> */}
                                 <div class="flex  w-1/5 justify-center">
-                                    <div class="relative flex h-full w-1 items-center justify-center bg-fuchsia-300">
-                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-fuchsia-300 bg-white text-center font-bold leading-none">
+                                    <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
+                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white">
                                             <div>2</div>
                                             <div>Mayo</div>
                                         </div>
@@ -187,13 +193,13 @@ export default function Home() {
                                 </div>
                                 {/* <!--right column--> */}
                                 <div class="w-2/5 px-2 py-10 ">
-                                    <div class="flex w-full flex-col rounded-lg bg-white px-4 py-5 shadow">
-                                        <div class="mb-2 flex justify-between text-gray-600">
+                                    <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500/75 to-[#ec2e92]/50 px-4 py-5 shadow">
+                                        <div class="mb-2 flex justify-between text-white">
                                             <div class="font-bold">
                                                 Inicio de etapa de formación
                                             </div>
                                         </div>
-                                        <div class="text-gray-600">
+                                        <div class="text-white">
                                             <p class="color-contrast-medium">
                                                 Cada semana:
                                                 <br /> a) Participación
@@ -249,21 +255,21 @@ export default function Home() {
                                 {/* <!-- left col --> */}
 
                                 <div class="w-2/5 px-2 py-10">
-                                    <div class="flex w-full flex-col rounded-lg bg-white px-4 py-5 shadow">
-                                        <div class="mb-2 flex justify-between text-gray-600">
+                                    <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
+                                        <div class="mb-2 flex justify-between text-white">
                                             <div class="font-bold">
                                                 Receso Vacacional
                                             </div>
                                         </div>
-                                        <div class="text-gray-600">
+                                        <div class="text-white">
                                             Привет Lorem ipsum dolor sit amet,
                                         </div>
                                     </div>
                                 </div>
                                 {/* <!--line column--> */}
                                 <div class="flex  w-1/5 justify-center">
-                                    <div class="relative flex h-full w-1 items-center justify-center bg-fuchsia-300">
-                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-fuchsia-300 bg-white text-center font-bold leading-none">
+                                    <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
+                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white">
                                             <div>3 al 31</div>
                                             <div>Julio</div>
                                         </div>
@@ -280,8 +286,8 @@ export default function Home() {
                                 <div class="w-2/5 px-2 py-10"></div>
                                 {/* <!--line column--> */}
                                 <div class="flex  w-1/5 justify-center">
-                                    <div class="relative flex h-full w-1 items-center justify-center bg-fuchsia-300">
-                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-fuchsia-300 bg-white text-center font-bold leading-none">
+                                    <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
+                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white">
                                             <div>1 al 30</div>
                                             <div>Agosto</div>
                                         </div>
@@ -289,14 +295,14 @@ export default function Home() {
                                 </div>
                                 {/* <!--right column--> */}
                                 <div class="w-2/5 px-2 py-10 ">
-                                    <div class="flex w-full flex-col rounded-lg bg-white px-4 py-5 shadow">
-                                        <div class="mb-2 flex justify-between text-gray-600">
+                                    <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500/75 to-[#ec2e92]/50 px-4 py-5 shadow">
+                                        <div class="mb-2 flex justify-between text-white">
                                             <div class="font-bold">
                                                 Reinicio y cierre de etapa de
                                                 formación
                                             </div>
                                         </div>
-                                        <div class="text-gray-600">
+                                        <div class="text-white">
                                             lorem ipsum shit
                                         </div>
                                     </div>
@@ -307,13 +313,13 @@ export default function Home() {
                                 {/* <!-- left col --> */}
 
                                 <div class="w-2/5 px-2 py-10">
-                                    <div class="flex w-full flex-col rounded-lg bg-white px-4 py-5 shadow">
-                                        <div class="mb-2 flex justify-between text-gray-600">
+                                    <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
+                                        <div class="mb-2 flex justify-between text-white">
                                             <div class="font-bold">
                                                 Premiación y lanzamiento
                                             </div>
                                         </div>
-                                        <div class="text-gray-600">
+                                        <div class="text-white">
                                             Evento de gala a realizarse en
                                             Poliforum Cultural Universitario el
                                             día XX de XXXX, a las XXXX, con
@@ -324,8 +330,8 @@ export default function Home() {
                                 </div>
                                 {/* <!--line column--> */}
                                 <div class="flex  w-1/5 justify-center">
-                                    <div class="relative flex h-full w-1 items-center justify-center bg-fuchsia-300">
-                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-fuchsia-300 bg-white text-center font-bold leading-none">
+                                    <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
+                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white">
                                             <div>17</div>
                                             <div>Septiembre</div>
                                         </div>
