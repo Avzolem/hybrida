@@ -214,6 +214,12 @@ export default function Home() {
           <div class="w-full px-2 py-3 ">
             <div class="w-full rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
               <div class="0 mb-2 text-white">
+                <h2
+                  id="titulo"
+                  class="opacity-1 text-center text-xl font-bold tracking-tight sm:text-2xl  md:text-3xl lg:text-4xl"
+                >
+                  17 de septiembre{" "}
+                </h2>
                 <h3
                   id="titulo"
                   class="opacity-1 text-center text-xl font-bold tracking-tight sm:text-2xl  md:text-3xl lg:text-4xl"
