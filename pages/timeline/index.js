@@ -2,350 +2,535 @@ import MainLayout from "@/components/layouts/MainLayout";
 import ParticlesBackground from "@/components/hybrida/ParticlesBackground";
 
 export default function Home() {
-    return (
-        <div>
-            <ParticlesBackground />
-            <MainLayout
-                id="main-layout"
-                title="artistas"
-                description="Cronograma de actividades"
-            >
-                {/* <!-- Timeline component --> */}
-                <link
-                    rel="stylesheet"
-                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-                    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-                    crossorigin="anonymous"
-                />
+  return (
+    <div>
+      <ParticlesBackground />
+      <MainLayout
+        id="main-layout"
+        title="artistas"
+        description="Cronograma de actividades"
+      >
+        {/* <!-- Timeline component --> */}
 
-                <div class="relative min-h-screen">
-                    <div class="flex min-h-screen justify-center">
-                        <div class="mx-auto w-2/3">
-                            <div class="flex w-full flex-row">
-                                {/* <!-- left col --> */}
+        {/* Mobile First  */}
+        <div class="relative block md:hidden">
+          {/* <!--Circle--> */}
+          <div class="flex w-full justify-center py-16">
+            <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
+              <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white ">
+                <div>1</div>
+                <div>Marzo</div>
+              </div>
+            </div>
+          </div>
+          {/* Card component */}
+          <div class="w-full px-2 py-3 ">
+            <div class="w-full rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
+              <div class="0 mb-2 text-white">
+                <h3
+                  id="titulo"
+                  class="opacity-1 text-center text-xl font-bold tracking-tight sm:text-2xl  md:text-3xl lg:text-4xl"
+                >
+                  Apertura de convocatoria
+                </h3>
+              </div>
+              <p id="descriptic" class="text-center text-white ">
+                Revisa la convocatoria. Aqui va un href
+              </p>
+            </div>
+          </div>
+          {/* <!--Circle--> */}
+          <div class="flex w-full justify-center py-16">
+            <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
+              <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white ">
+                <div>8, 15 y 22</div>
+                <div>Marzo</div>
+              </div>
+            </div>
+          </div>
+          {/* Card component */}
+          <div class="w-full px-2 py-3 ">
+            <div class="w-full rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
+              <div class="0 mb-2 text-white">
+                <h3
+                  id="titulo"
+                  class="opacity-1 text-center text-xl font-bold tracking-tight sm:text-2xl  md:text-3xl lg:text-4xl"
+                >
+                  Sesiones informativas{" "}
+                </h3>
+              </div>
+              <p id="descriptic" class="text-center text-white ">
+                El horario y plataforma se notificarán por las redes sociales de
+                la UACH.{" "}
+              </p>
+            </div>
+          </div>
+          {/* <!--Circle--> */}
+          <div class="flex w-full justify-center py-16">
+            <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
+              <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white ">
+                <div>31</div>
+                <div>Marzo</div>
+              </div>
+            </div>
+          </div>
+          {/* Card component */}
+          <div class="w-full px-2 py-3 ">
+            <div class="w-full rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
+              <div class="0 mb-2 text-white">
+                <h3
+                  id="titulo"
+                  class="opacity-1 text-center text-xl font-bold tracking-tight sm:text-2xl  md:text-3xl lg:text-4xl"
+                >
+                  Cierre de convocatoria
+                </h3>
+              </div>
+            </div>
+          </div>
+          {/* <!--Circle--> */}
+          <div class="flex w-full justify-center py-16">
+            <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
+              <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white ">
+                <div>18 al 27</div>
+                <div>Abril</div>
+              </div>
+            </div>
+          </div>
+          {/* Card component */}
 
-                                <div class="w-2/5 px-2 py-10 ">
-                                    <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
-                                        <div class="0 mb-2 flex justify-between text-white">
-                                            <div
-                                                id="titulo"
-                                                class="opacity-1 text-xl font-bold tracking-tight sm:text-2xl  md:text-3xl lg:text-4xl"
-                                            >
-                                                Apertura de convocatoria
-                                            </div>
-                                        </div>
-                                        <div
-                                            id="descriptic"
-                                            class="text-white  "
-                                        >
-                                            Revisa la convocatoria. Aqui va un
-                                            href
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <!--line column--> */}
-                                <div class="flex  w-1/5 justify-center">
-                                    <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
-                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white ">
-                                            <div>1</div>
-                                            <div>Marzo</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <!--right column--> */}
-                                <div class="w-2/5 px-2 py-10 "></div>
-                            </div>
-
-                            {/* Aqui termina un elemento ------------------ */}
-
-                            <div class="flex w-full flex-row">
-                                {/* <!-- left col --> */}
-
-                                <div class="w-2/5 px-2 py-10"></div>
-                                {/* <!--line column--> */}
-                                <div class="flex  w-1/5 justify-center">
-                                    <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
-                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white">
-                                            <div>8, 15 y 22</div>
-                                            <div>Marzo</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <!--right column--> */}
-                                <div class="w-2/5 px-2 py-10 ">
-                                    <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500/75 to-[#ec2e92]/50  px-4 py-5 shadow">
-                                        <div class="mb-2 flex justify-between text-white">
-                                            <div class="font-bold">
-                                                Sesiones informativas
-                                            </div>
-                                        </div>
-                                        <div class="text-white">
-                                            El horario y plataforma se
-                                            notificarán por las redes sociales
-                                            de la UACH.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/*Aqui termina un elemento del timeline--------------------*/}
-
-                            <div class="flex w-full flex-row">
-                                {/* <!-- left col --> */}
-
-                                <div class="w-2/5 px-2 py-10">
-                                    <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
-                                        <div class="mb-2 flex justify-between text-white">
-                                            <div class="font-bold">
-                                                Cierre de convocatoria
-                                            </div>
-                                        </div>
-                                        <div class="text-white">
-                                            Привет Lorem ipsum dolor sit amet,
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <!--line column--> */}
-                                <div class="flex  w-1/5 justify-center">
-                                    <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
-                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white">
-                                            <div>31</div>
-                                            <div>Marzo</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <!--right column--> */}
-                                <div class="w-2/5 px-2 py-10 "></div>
-                            </div>
-
-                            {/* Aqui termina el elemento del timeline -----------------------------*/}
-
-                            <div class="flex w-full flex-row">
-                                {/* <!-- left col --> */}
-
-                                <div class="w-2/5 px-2 py-10"></div>
-                                {/* <!--line column--> */}
-                                <div class="flex  w-1/5 justify-center">
-                                    <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
-                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white">
-                                            <div>18 al 27</div>
-                                            <div>Abril</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <!--right column--> */}
-                                <div class="w-2/5 px-2 py-10 ">
-                                    <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500/75 to-[#ec2e92]/50 px-4 py-5 shadow">
-                                        <div class="mb-2 flex justify-between text-white">
-                                            <div class="font-bold">
-                                                Evaluación de propuestas
-                                            </div>
-                                        </div>
-                                        <div class="text-white">
-                                            Conoce al Jurado evaluador. Aqui va
-                                            un href a contact
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Aqui termina el elemento del timeline -----------------------------*/}
-                            <div class="flex w-full flex-row">
-                                {/* <!-- left col --> */}
-
-                                <div class="w-2/5 px-2 py-10">
-                                    <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
-                                        <div class="mb-2 flex justify-between text-white">
-                                            <div class="font-bold">
-                                                Anuncio de personas
-                                                seleccionadas
-                                            </div>
-                                        </div>
-                                        <div class="text-white">
-                                            Привет Lorem ipsum dolor sit amet,
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <!--line column--> */}
-                                <div class="flex  w-1/5 justify-center">
-                                    <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
-                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white">
-                                            <div>28</div>
-                                            <div>Abril</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <!--right column--> */}
-                                <div class="w-2/5 px-2 py-10 "></div>
-                            </div>
-
-                            {/* Aqui termina el elemento del timeline -----------------------------*/}
-                            <div class="flex w-full flex-row">
-                                {/* <!-- left col --> */}
-
-                                <div class="w-2/5 px-2 py-10"></div>
-                                {/* <!--line column--> */}
-                                <div class="flex  w-1/5 justify-center">
-                                    <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
-                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white">
-                                            <div>2</div>
-                                            <div>Mayo</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <!--right column--> */}
-                                <div class="w-2/5 px-2 py-10 ">
-                                    <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500/75 to-[#ec2e92]/50 px-4 py-5 shadow">
-                                        <div class="mb-2 flex justify-between text-white">
-                                            <div class="font-bold">
-                                                Inicio de etapa de formación
-                                            </div>
-                                        </div>
-                                        <div class="text-white">
-                                            <p class="color-contrast-medium">
-                                                Cada semana:
-                                                <br /> a) Participación
-                                                presencial en taller con
-                                                duración de 2 horas
-                                                <br />
-                                                b) Masterclass semanal con
-                                                duración de 1 hora.
-                                            </p>
-
-                                            <p class="color-contrast-medium">
-                                                Temas:
-                                            </p>
-
-                                            <p class="color-contrast-medium">
-                                                Módulo 1 (2 a 19 de mayo)
-                                                <br />
-                                                Programación básica
-                                                <br />
-                                                Introducción a diseño y
-                                                maquetación para web
-                                                <br />
-                                                Presentación de avances
-                                                <br />
-                                                <br />
-                                                Módulo 2 (22 mayo al 9 de junio)
-                                                <br />
-                                                Diseño y programación de
-                                                videojuegos en Unity
-                                                <br />
-                                                Realidad virtual y aumentada,
-                                                metaverso
-                                                <br />
-                                                Presentación de avances
-                                                <br />
-                                                <br />
-                                                Módulo 3 (12 al 29 de junio)
-                                                <br />
-                                                Manejo de Plataformas de Arte
-                                                Digital NTFs y Blockchain
-                                                <br />
-                                                Creación de Dossier/Galería
-                                                Digital en Metaverso
-                                                <br />
-                                                Presentación de avances
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Aqui termina el elemento del timeline -----------------------------*/}
-                            <div class="flex w-full flex-row">
-                                {/* <!-- left col --> */}
-
-                                <div class="w-2/5 px-2 py-10">
-                                    <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
-                                        <div class="mb-2 flex justify-between text-white">
-                                            <div class="font-bold">
-                                                Receso Vacacional
-                                            </div>
-                                        </div>
-                                        <div class="text-white">
-                                            Привет Lorem ipsum dolor sit amet,
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <!--line column--> */}
-                                <div class="flex  w-1/5 justify-center">
-                                    <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
-                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white">
-                                            <div>3 al 31</div>
-                                            <div>Julio</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <!--right column--> */}
-                                <div class="w-2/5 px-2 py-10 "></div>
-                            </div>
-
-                            {/* Aqui termina el elemento del timeline -----------------------------*/}
-                            <div class="flex w-full flex-row">
-                                {/* <!-- left col --> */}
-
-                                <div class="w-2/5 px-2 py-10"></div>
-                                {/* <!--line column--> */}
-                                <div class="flex  w-1/5 justify-center">
-                                    <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
-                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white">
-                                            <div>1 al 30</div>
-                                            <div>Agosto</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <!--right column--> */}
-                                <div class="w-2/5 px-2 py-10 ">
-                                    <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500/75 to-[#ec2e92]/50 px-4 py-5 shadow">
-                                        <div class="mb-2 flex justify-between text-white">
-                                            <div class="font-bold">
-                                                Reinicio y cierre de etapa de
-                                                formación
-                                            </div>
-                                        </div>
-                                        <div class="text-white">
-                                            lorem ipsum shit
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Aqui termina el elemento del timeline -----------------------------*/}
-                            <div class="flex w-full flex-row">
-                                {/* <!-- left col --> */}
-
-                                <div class="w-2/5 px-2 py-10">
-                                    <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
-                                        <div class="mb-2 flex justify-between text-white">
-                                            <div class="font-bold">
-                                                Premiación y lanzamiento
-                                            </div>
-                                        </div>
-                                        <div class="text-white">
-                                            Evento de gala a realizarse en
-                                            Poliforum Cultural Universitario el
-                                            día XX de XXXX, a las XXXX, con
-                                            duración de 3 horas. Incluye montaje
-                                            previo al evento.
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <!--line column--> */}
-                                <div class="flex  w-1/5 justify-center">
-                                    <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
-                                        <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white">
-                                            <div>17</div>
-                                            <div>Septiembre</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <!--right column--> */}
-                                <div class="w-2/5 px-2 py-10 "></div>
-                            </div>
-
-                            {/* Aqui termina el elemento del timeline -----------------------------*/}
-                        </div>
-                    </div>
-                </div>
-            </MainLayout>
+          <div class="w-full px-2 py-3 ">
+            <div class="w-full rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
+              <div class="0 mb-2 text-white">
+                <h3
+                  id="titulo"
+                  class="opacity-1 text-center text-xl font-bold tracking-tight sm:text-2xl  md:text-3xl lg:text-4xl"
+                >
+                  Evaluación de propuestas
+                </h3>
+              </div>
+              <p id="descriptic" class="text-center text-white ">
+                Conoce al jurado evaluador. Aqui va un href a Contact
+              </p>
+            </div>
+          </div>
+          {/* <!--Circle--> */}
+          <div class="flex w-full justify-center py-16">
+            <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
+              <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white ">
+                <div>28</div>
+                <div>Abril</div>
+              </div>
+            </div>
+          </div>
+          {/* Card component */}
+          <div class="w-full px-2 py-3 ">
+            <div class="w-full rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
+              <div class="0 mb-2 text-white">
+                <h3
+                  id="titulo"
+                  class="opacity-1 text-center text-xl font-bold tracking-tight sm:text-2xl  md:text-3xl lg:text-4xl"
+                >
+                  Anuncio de personas seleccionadas
+                </h3>
+              </div>
+            </div>
+          </div>
+          {/* <!--Circle--> */}
+          <div class="flex w-full justify-center py-16">
+            <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
+              <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white ">
+                <div>2</div>
+                <div>Mayo</div>
+              </div>
+            </div>
+          </div>
+          {/* Card component */}
+          <div class="w-full px-2 py-3 ">
+            <div class="w-full rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
+              <div class="0 mb-2 text-white">
+                <h3
+                  id="titulo"
+                  class="opacity-1 text-center text-xl font-bold tracking-tight sm:text-2xl  md:text-3xl lg:text-4xl"
+                >
+                  Inicio etapa de formación{" "}
+                </h3>
+              </div>
+            </div>
+          </div>
+          {/* <!--Circle--> */}
+          <div class="flex w-full justify-center py-16">
+            <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
+              <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white ">
+                <div>3 al 31</div>
+                <div>Julio</div>
+              </div>
+            </div>
+          </div>
+          {/* Card component */}
+          <div class="w-full px-2 py-3 ">
+            <div class="w-full rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
+              <div class="0 mb-2 text-white">
+                <h3
+                  id="titulo"
+                  class="opacity-1 text-center text-xl font-bold tracking-tight sm:text-2xl  md:text-3xl lg:text-4xl"
+                >
+                  receso vacacional{" "}
+                </h3>
+              </div>
+            </div>
+          </div>
+          {/* <!--Circle--> */}
+          <div class="flex w-full justify-center py-16">
+            <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
+              <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white ">
+                <div>1 al 30</div>
+                <div>Agosto</div>
+              </div>
+            </div>
+          </div>
+          {/* Card component */}
+          <div class="w-full px-2 py-3 ">
+            <div class="w-full rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
+              <div class="0 mb-2 text-white">
+                <h3
+                  id="titulo"
+                  class="opacity-1 text-center text-xl font-bold tracking-tight sm:text-2xl  md:text-3xl lg:text-4xl"
+                >
+                  Reinicio y cierre de etapa de formación{" "}
+                </h3>
+              </div>
+            </div>
+          </div>
+          {/* <!--Circle--> */}
+          <div class="flex w-full justify-center py-16">
+            <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
+              <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white ">
+                <div>17</div>
+                <div>Septiembre</div>
+              </div>
+            </div>
+          </div>
+          {/* Card component */}
+          <div class="w-full px-2 py-3 ">
+            <div class="w-full rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
+              <div class="0 mb-2 text-white">
+                <h3
+                  id="titulo"
+                  class="opacity-1 text-center text-xl font-bold tracking-tight sm:text-2xl  md:text-3xl lg:text-4xl"
+                >
+                  Premiación y lanzamiento
+                </h3>
+              </div>
+              <p id="descriptic" class="text-center text-white ">
+                Evento de gala a realizarse en Poliforum Cultural Universitario
+                el día XX de XXXX a las XXXX, cn duración de 3 horas. Incluye
+                montaje previo al evento.
+              </p>
+            </div>
+          </div>
         </div>
-    );
+        {/* Desktop second */}
+        <div class="hidden md:block">
+          <div class="relative min-h-screen">
+            <div class="flex min-h-screen justify-center">
+              <div class="mx-auto w-2/3">
+                <div class="flex w-full flex-row">
+                  {/* <!-- left col --> */}
+
+                  <div class="w-2/5 px-2 py-10 ">
+                    <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
+                      <div class="0 mb-2 flex justify-between text-white">
+                        <div
+                          id="titulo"
+                          class="opacity-1 text-xl font-bold tracking-tight sm:text-2xl  md:text-3xl lg:text-4xl"
+                        >
+                          Apertura de convocatoria
+                        </div>
+                      </div>
+                      <div id="descriptic" class="text-white  ">
+                        Revisa la convocatoria. Aqui va un href
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!--line column--> */}
+                  <div class="flex  w-1/5 justify-center">
+                    <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
+                      <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white ">
+                        <div>1</div>
+                        <div>Marzo</div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!--right column--> */}
+                  <div class="w-2/5 px-2 py-10 "></div>
+                </div>
+
+                {/* Aqui termina un elemento ------------------ */}
+
+                <div class="flex w-full flex-row">
+                  {/* <!-- left col --> */}
+
+                  <div class="w-2/5 px-2 py-10"></div>
+                  {/* <!--line column--> */}
+                  <div class="flex  w-1/5 justify-center">
+                    <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
+                      <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white">
+                        <div>8, 15 y 22</div>
+                        <div>Marzo</div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!--right column--> */}
+                  <div class="w-2/5 px-2 py-10 ">
+                    <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500/75 to-[#ec2e92]/50  px-4 py-5 shadow">
+                      <div class="mb-2 flex justify-between text-white">
+                        <div class="font-bold">Sesiones informativas</div>
+                      </div>
+                      <div class="text-white">
+                        El horario y plataforma se notificarán por las redes
+                        sociales de la UACH.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/*Aqui termina un elemento del timeline--------------------*/}
+
+                <div class="flex w-full flex-row">
+                  {/* <!-- left col --> */}
+
+                  <div class="w-2/5 px-2 py-10">
+                    <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
+                      <div class="mb-2 flex justify-between text-white">
+                        <div class="font-bold">Cierre de convocatoria</div>
+                      </div>
+                      <div class="text-white">
+                        Привет Lorem ipsum dolor sit amet,
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!--line column--> */}
+                  <div class="flex  w-1/5 justify-center">
+                    <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
+                      <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white">
+                        <div>31</div>
+                        <div>Marzo</div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!--right column--> */}
+                  <div class="w-2/5 px-2 py-10 "></div>
+                </div>
+
+                {/* Aqui termina el elemento del timeline -----------------------------*/}
+
+                <div class="flex w-full flex-row">
+                  {/* <!-- left col --> */}
+
+                  <div class="w-2/5 px-2 py-10"></div>
+                  {/* <!--line column--> */}
+                  <div class="flex  w-1/5 justify-center">
+                    <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
+                      <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white">
+                        <div>18 al 27</div>
+                        <div>Abril</div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!--right column--> */}
+                  <div class="w-2/5 px-2 py-10 ">
+                    <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500/75 to-[#ec2e92]/50 px-4 py-5 shadow">
+                      <div class="mb-2 flex justify-between text-white">
+                        <div class="font-bold">Evaluación de propuestas</div>
+                      </div>
+                      <div class="text-white">
+                        Conoce al Jurado evaluador. Aqui va un href a contact
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* Aqui termina el elemento del timeline -----------------------------*/}
+                <div class="flex w-full flex-row">
+                  {/* <!-- left col --> */}
+
+                  <div class="w-2/5 px-2 py-10">
+                    <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
+                      <div class="mb-2 flex justify-between text-white">
+                        <div class="font-bold">
+                          Anuncio de personas seleccionadas
+                        </div>
+                      </div>
+                      <div class="text-white">
+                        Привет Lorem ipsum dolor sit amet,
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!--line column--> */}
+                  <div class="flex  w-1/5 justify-center">
+                    <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
+                      <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white">
+                        <div>28</div>
+                        <div>Abril</div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!--right column--> */}
+                  <div class="w-2/5 px-2 py-10 "></div>
+                </div>
+
+                {/* Aqui termina el elemento del timeline -----------------------------*/}
+                <div class="flex w-full flex-row">
+                  {/* <!-- left col --> */}
+
+                  <div class="w-2/5 px-2 py-10"></div>
+                  {/* <!--line column--> */}
+                  <div class="flex  w-1/5 justify-center">
+                    <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
+                      <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white">
+                        <div>2</div>
+                        <div>Mayo</div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!--right column--> */}
+                  <div class="w-2/5 px-2 py-10 ">
+                    <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500/75 to-[#ec2e92]/50 px-4 py-5 shadow">
+                      <div class="mb-2 flex justify-between text-white">
+                        <div class="font-bold">
+                          Inicio de etapa de formación
+                        </div>
+                      </div>
+                      <div class="text-white">
+                        <p class="color-contrast-medium">
+                          Cada semana:
+                          <br /> a) Participación presencial en taller con
+                          duración de 2 horas
+                          <br />
+                          b) Masterclass semanal con duración de 1 hora.
+                        </p>
+
+                        <p class="color-contrast-medium">Temas:</p>
+
+                        <p class="color-contrast-medium">
+                          Módulo 1 (2 a 19 de mayo)
+                          <br />
+                          Programación básica
+                          <br />
+                          Introducción a diseño y maquetación para web
+                          <br />
+                          Presentación de avances
+                          <br />
+                          <br />
+                          Módulo 2 (22 mayo al 9 de junio)
+                          <br />
+                          Diseño y programación de videojuegos en Unity
+                          <br />
+                          Realidad virtual y aumentada, metaverso
+                          <br />
+                          Presentación de avances
+                          <br />
+                          <br />
+                          Módulo 3 (12 al 29 de junio)
+                          <br />
+                          Manejo de Plataformas de Arte Digital NTFs y
+                          Blockchain
+                          <br />
+                          Creación de Dossier/Galería Digital en Metaverso
+                          <br />
+                          Presentación de avances
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* Aqui termina el elemento del timeline -----------------------------*/}
+                <div class="flex w-full flex-row">
+                  {/* <!-- left col --> */}
+
+                  <div class="w-2/5 px-2 py-10">
+                    <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
+                      <div class="mb-2 flex justify-between text-white">
+                        <div class="font-bold">Receso Vacacional</div>
+                      </div>
+                      <div class="text-white">
+                        Привет Lorem ipsum dolor sit amet,
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!--line column--> */}
+                  <div class="flex  w-1/5 justify-center">
+                    <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
+                      <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white">
+                        <div>3 al 31</div>
+                        <div>Julio</div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!--right column--> */}
+                  <div class="w-2/5 px-2 py-10 "></div>
+                </div>
+
+                {/* Aqui termina el elemento del timeline -----------------------------*/}
+                <div class="flex w-full flex-row">
+                  {/* <!-- left col --> */}
+
+                  <div class="w-2/5 px-2 py-10"></div>
+                  {/* <!--line column--> */}
+                  <div class="flex  w-1/5 justify-center">
+                    <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
+                      <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white">
+                        <div>1 al 30</div>
+                        <div>Agosto</div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!--right column--> */}
+                  <div class="w-2/5 px-2 py-10 ">
+                    <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500/75 to-[#ec2e92]/50 px-4 py-5 shadow">
+                      <div class="mb-2 flex justify-between text-white">
+                        <div class="font-bold">
+                          Reinicio y cierre de etapa de formación
+                        </div>
+                      </div>
+                      <div class="text-white">lorem ipsum shit</div>
+                    </div>
+                  </div>
+                </div>
+                {/* Aqui termina el elemento del timeline -----------------------------*/}
+                <div class="flex w-full flex-row">
+                  {/* <!-- left col --> */}
+
+                  <div class="w-2/5 px-2 py-10">
+                    <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
+                      <div class="mb-2 flex justify-between text-white">
+                        <div class="font-bold">Premiación y lanzamiento</div>
+                      </div>
+                      <div class="text-white">
+                        Evento de gala a realizarse en Poliforum Cultural
+                        Universitario el día XX de XXXX, a las XXXX, con
+                        duración de 3 horas. Incluye montaje previo al evento.
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!--line column--> */}
+                  <div class="flex  w-1/5 justify-center">
+                    <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
+                      <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white">
+                        <div>17</div>
+                        <div>Septiembre</div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!--right column--> */}
+                  <div class="w-2/5 px-2 py-10 "></div>
+                </div>
+
+                {/* Aqui termina el elemento del timeline -----------------------------*/}
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Timeline para mobile ----------------------------------------------------- */}
+      </MainLayout>
+    </div>
+  );
 }
