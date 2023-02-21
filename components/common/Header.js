@@ -15,7 +15,7 @@ const navigation = {
     pages: [
         { name: "Cronograma", href: "/timeline" },
         { name: "Manifiesto", href: "/manifest" },
-        { name: "Artistas", href: "/artistas" },
+        { name: "Jurado", href: "/jurado" },
         { name: "Contactanos", href: "/contact" },
         { name: "Candy Machine", href: "/candymachine" },
     ],

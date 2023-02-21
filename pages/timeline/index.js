@@ -35,7 +35,10 @@ export default function Home() {
                                 </h3>
                             </div>
                             <p id="descriptic" class="text-center text-white ">
-                                Revisa la convocatoria. Aqui va un href
+                                Revisa la  
+                                <a href="/" className=" text-blue-300 hover:text-blue-100">                                       
+                                 {" "} &nbsp;Convocatoria.
+                                  </a>
                             </p>
                         </div>
                     </div>
@@ -108,9 +111,11 @@ export default function Home() {
                                     Evaluación de propuestas
                                 </h3>
                             </div>
-                            <p id="descriptic" class="text-center text-white ">
-                                Conoce al jurado evaluador. Aqui va un href a
-                                Contact
+                            <p id="descriptic" class="text-center text-white  ">
+                                  Conoce al 
+                                 <a href="/jurado" className=" text-blue-300 hover:text-blue-100">                                       
+                                 {" "} &nbsp;Jurado evaluador.
+                                  </a>
                             </p>
                         </div>
                     </div>
@@ -262,8 +267,10 @@ export default function Home() {
                                                 id="descriptic"
                                                 class="text-white  "
                                             >
-                                                Revisa la convocatoria. Aqui va
-                                                un href
+                                                Revisa la 
+                                                <a href="/" className=" text-blue-300 hover:text-blue-100">                                       
+                                 {" "} &nbsp;Convocatoria.
+                                  </a>
                                             </div>
                                         </div>
                                     </div>
@@ -366,8 +373,10 @@ export default function Home() {
                                                 </div>
                                             </div>
                                             <div class="text-white">
-                                                Conoce al Jurado evaluador. Aqui
-                                                va un href a contact
+                                                Conoce al 
+                                                    <a href="/jurado" className=" text-blue-300 hover:text-blue-100">                                       
+                                                        {" "} &nbsp;Jurado evaluador.
+                                                    </a>
                                             </div>
                                         </div>
                                     </div>
