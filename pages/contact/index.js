@@ -271,7 +271,7 @@ const ContactPage = () => {
                                     name="message"
                                     type="text"
                                     register={{
-                                        ...register("category", {}),
+                                        ...register("message", {}),
                                     }}
                                     errorMessage={errors.category?.message}
                                 />
