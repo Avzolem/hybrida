@@ -268,7 +268,7 @@ const ContactPage = () => {
                             <div className="w-full">
                                 <Input
                                     label="Ejemplos de tu trabajo: (Tres ejemplos, PNG, JPG, GIF. Tamaño Máx. 3 MB c/u)"
-                                    name="category"
+                                    name="message"
                                     type="text"
                                     register={{
                                         ...register("category", {}),
@@ -280,12 +280,12 @@ const ContactPage = () => {
                             {/* LINK A PORTAFOLIO */}
 
                             <div className="w-full">
-                                <TextArea
+                                <Input
                                     label="Link a portafolio o descarga (opcional):"
-                                    name="portfolio"
+                                    name="portafolio"
                                     type="text"
                                     register={{
-                                        ...register("message", {}),
+                                        ...register("portafolio", {}),
                                     }}
                                     errorMessage={errors.message?.message}
                                 />
@@ -335,10 +335,10 @@ const ContactPage = () => {
                             <div className="w-full">
                                 <Select
                                     type="text"
-                                    label="¿¿Eres alumno, egresado o trabajas en la UACH?"
-                                    name="comoteenteraste"
+                                    label="¿Eres alumno, egresado o trabajas en la UACH?"
+                                    name="alumno"
                                     register={{
-                                        ...register("comoteenteraste", {
+                                        ...register("alumno", {
                                             required: {
                                                 value: true,
                                                 message:

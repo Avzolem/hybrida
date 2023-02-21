@@ -17,7 +17,7 @@ handler.use(async (req, res, next) => {
 handler.post(async (req, res) => {
     const { data } = req.body;
 
-    const { firstName, lastName, email, phone, category, message } = data;
+    const { firstName, lastName, email, phone, category, message, portafolio, motivos, comoteenteraste, alumno, } = data;
 
     try {
         //send data to google sheets
@@ -33,6 +33,10 @@ handler.post(async (req, res) => {
                     phone,
                     category,
                     message,
+                    portafolio,
+                    motivos,
+                    comoteenteraste,
+                    alumno,
                 },
             ],
             submissionsSheetIndex
@@ -58,9 +62,17 @@ handler.post(async (req, res) => {
           </br>
           <p><strong>Telefono</strong>: ${phone}</p>
           </br>
-          <p><strong>Escuela/Organizacion</strong>: ${category}</p>
+          <p><strong>Categoria de tu trabajo</strong>: ${category}</p>
           </br>
           <p><strong>Mensaje</strong>: ${message}</p>
+          </br>
+          <p><strong>Link al portfolio</strong>: ${portafolio}</p>
+          </br>
+          <p><strong>Motivos para participar</strong>: ${motivos}</p>
+          </br>
+          <p><strong>Como se entero</strong>: ${comoteenteraste}</p>
+          </br>
+          <p><strong>Es alumno de la uach</strong>: ${alumno}</p>
           </br>
         `;
 
