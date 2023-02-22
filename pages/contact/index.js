@@ -17,6 +17,8 @@ const ContactPage = () => {
     const [image, setImage] = useState(null);
     const [loading, setloading] = useState(false);
 
+    //Esto es para subir la imagen a cloudinary
+
     const uploadImage = async (e) => {
         const files = e.target.files;
         const data = new FormData();
@@ -36,6 +38,8 @@ const ContactPage = () => {
         setImage(file.secure_url);
         setloading(false);
     };
+
+    //.......................................................
 
     const {
         register,
@@ -291,8 +295,13 @@ const ContactPage = () => {
                             <div className="w-full text-sm font-medium text-hybrida-fuchsia">
                                 <h1>
                                     Ejemplos de tu trabajo con tu nombre: <br />
-                                    (Tres ejemplos, PNG, JPG, GIF. Tamaño Máx. 3
-                                    MB c/u){" "}
+                                    Tres ejemplos, PNG, JPG, GIF. Tamaño Máx. 3
+                                    MB c/u,
+                                    <br />
+                                    Recuerda renombrar los archivos con tu
+                                    nombre completo
+                                    <br />
+                                    (Ejemplo: Andres_Aguilar_1.png){" "}
                                 </h1>
                                 <br />
 
