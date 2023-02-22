@@ -24,7 +24,8 @@ const ContactPage = () => {
                                 <div className="text-center text-sm">
                                     <div className="flex justify-center">
                                         <p>Escribenos un correo a</p> &nbsp;
-                                        <a href="mailto:hybrida@uach.mx">
+                                        <a href="mailto:hybrida@uach.mx"
+                                            target="_blank">
                                             <p class="font-bold text-sky-400/100">
                                                 hybrida@uach.mx
                                             </p>
@@ -33,7 +34,8 @@ const ContactPage = () => {
                                     <div className="flex justify-center">
                                         <p>Envía mensaje vía Instagram a</p>{" "}
                                         &nbsp;
-                                        <a href="https://www.instagram.com/hybrida.uach/ ">
+                                        <a href="https://www.instagram.com/hybrida.uach/" 
+                                            target="_blank">
                                             <p class="font-bold text-pink-400/100">
                                                 @hybrida.uach
                                             </p>
@@ -41,7 +43,8 @@ const ContactPage = () => {
                                     </div>
                                     <div className="flex justify-center">
                                         <p>Envía mensaje vía Discord </p> &nbsp;
-                                        <a href="https://discord.gg/6g7rZTsaCP">
+                                        <a href="https://discord.gg/6g7rZTsaCP"
+                                            target="_blank">
                                             <p class="font-bold text-purple-600">
                                                 @hybridauach
                                             </p>
