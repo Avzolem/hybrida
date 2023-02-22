@@ -14,6 +14,29 @@ import {
 } from "@/components/forms/fields";
 
 const ContactPage = () => {
+    const [image, setImage] = useState(null);
+    const [loading, setloading] = useState(false);
+
+    const uploadImage = async (e) => {
+        const files = e.target.files;
+        const data = new FormData();
+        data.append("file", files[0]);
+        data.append("upload_preset", "hybrida_upload");
+        setloading(true);
+
+        const res = await fetch(
+            "https://api.cloudinary.com/v1_1/ddxpbfk8t/image/upload",
+            {
+                method: "POST",
+                body: data,
+            }
+        );
+
+        const file = await res.json();
+        setImage(file.secure_url);
+        setloading(false);
+    };
+
     const {
         register,
         clearErrors,
@@ -265,8 +288,51 @@ const ContactPage = () => {
 
                             {/* AQUI HAY QUE SUBIR TRES EJEMPLOS DE TU TRABAJO */}
 
-                            <div className="w-full">
-                                <Input
+                            <div className="w-full text-sm font-medium text-hybrida-fuchsia">
+                                <h1>
+                                    Ejemplos de tu trabajo con tu nombre: <br />
+                                    (Tres ejemplos, PNG, JPG, GIF. Tamaño Máx. 3
+                                    MB c/u){" "}
+                                </h1>
+                                <br />
+
+                                <input
+                                    type="file"
+                                    name="file1"
+                                    placeholder="Subir un archivo"
+                                    onChange={uploadImage}
+                                    required
+                                />
+                                <br />
+                                <br />
+                                <input
+                                    type="file"
+                                    name="file2"
+                                    placeholder="Subir un archivo"
+                                    onChange={uploadImage}
+                                    required
+                                />
+                                <br />
+                                <br />
+                                <input
+                                    type="file"
+                                    name="file3"
+                                    placeholder="Subir un archivo"
+                                    onChange={uploadImage}
+                                    required
+                                />
+                                <br />
+                                <br />
+                                {loading ? (
+                                    <h3>Loading...</h3>
+                                ) : (
+                                    <img
+                                        src={image}
+                                        style={{ width: "100px" }}
+                                    />
+                                )}
+
+                                {/* <Input
                                     label="Ejemplos de tu trabajo: (Tres ejemplos, PNG, JPG, GIF. Tamaño Máx. 3 MB c/u)"
                                     name="message"
                                     type="text"
@@ -274,7 +340,7 @@ const ContactPage = () => {
                                         ...register("message", {}),
                                     }}
                                     errorMessage={errors.category?.message}
-                                />
+                                /> */}
                             </div>
 
                             {/* LINK A PORTAFOLIO */}
