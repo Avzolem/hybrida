@@ -184,9 +184,12 @@ const ContactPage = () => {
                             APLICA A HYBRIDA 1
                         </h2>
                         <p className="mt-4 text-lg leading-6 text-white">
-                            Para aplicar: 1. Revisa detenidamente los términos
-                            de la convocatoria. 2. Llena el formato que se
-                            presenta a continuación.
+                            Para aplicar:
+                            <br />
+                            1. Revisa detenidamente los términos de la
+                            convocatoria.
+                            <br /> 2. Llena el formato que se presenta a
+                            continuación.
                         </p>
                     </div>
                     <div className="mt-12">
@@ -490,7 +493,7 @@ const ContactPage = () => {
                                         }
                                     />
                                     <a
-                                        href="/privacy"
+                                        href="https://uach.mx/visitantes/privacidad-y-politicas-institucionales-para-el-uso-de-la-pagina-web/"
                                         className="block text-sm font-medium text-blue-300 hover:text-blue-100"
                                     >
                                         {" "}

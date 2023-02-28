@@ -17,7 +17,7 @@ const navigation = {
         { name: "Manifiesto", href: "/manifest" },
         { name: "Jurado", href: "/jurado" },
         { name: "Registro", href: "/contact" },
-        { name: "Candy Machine", href: "/candymachine" },
+        // { name: "Candy Machine", href: "/candymachine" },
     ],
 };
 let phantom;
@@ -210,7 +210,7 @@ const Header = () => {
                                         connectWallet();
                                     }}
                                 >
-                                    <a>Conectar cartera </a>
+                                    {/* <a>Conectar cartera </a> */}
                                 </button>
                             )}
                         </div>

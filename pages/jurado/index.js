@@ -12,10 +12,10 @@ const people = [
         websiteUrl: "https://medusalab.mx/",
     },
     {
-        name: "Bart Lopez",
-        role: "Another Person",
-        imageUrl: "/images/artistas/bart.jpeg",
-        twitterUrl: "#",
+        name: "Iñaki Garrido Frizzi",
+        role: "Titular de Museografía y Artes Visuales en el Centro Cultural Universitario Quinta Gameros de la UACH. Cuenta con estudios en artes visuales, filosofía, cine, documental, historia del arte y gestión cultural. Acreedor de becas y apoyos para la producción y difusión de proyectos artísticos a nivel estatal y nacional. Ha presentado obra plástica en México, Ecuador, España, Canadá y Reino Unido e ilustrado para publicaciones a nivel nacional e internacional.",
+        imageUrl: "/images/artistas/inaki.jpeg",
+        instagramUrl: "https://www.instagram.com/inakigarridofrizzi/",
         behanceUrl: "#",
         websiteUrl: "#",
     },
@@ -58,7 +58,7 @@ export default function Home() {
                     <div className="relative mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8 lg:py-24">
                         <div className="space-y-12">
                             <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
-                                <h2 className="text-3xl font-bold tracking-tight text-pink-500 sm:text-4xl">
+                                <h2 className="text-3xl font-bold tracking-tight text-hybrida-fuchsia sm:text-4xl">
                                     Conoce a nuestro Jurado Evaluador
                                 </h2>
                                 <p className="text-xl text-gray-300">
@@ -86,7 +86,7 @@ export default function Home() {
                                                     <h3 className="text-center text-white">
                                                         {person.name}
                                                     </h3>
-                                                    <p className="text-center text-pink-500">
+                                                    <p className="text-center text-hybrida-fuchsia">
                                                         {person.role}
                                                     </p>
                                                 </div>

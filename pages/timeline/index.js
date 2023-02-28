@@ -35,10 +35,14 @@ export default function Home() {
                                 </h3>
                             </div>
                             <p id="descriptic" class="text-center text-white ">
-                                Revisa la  
-                                <a href="/" className=" text-blue-300 hover:text-blue-100">                                       
-                                 {" "} &nbsp;Convocatoria.
-                                  </a>
+                                Revisa la
+                                <a
+                                    href="/"
+                                    className=" text-blue-300 hover:text-blue-100"
+                                >
+                                    {" "}
+                                    &nbsp;Convocatoria.
+                                </a>
                             </p>
                         </div>
                     </div>
@@ -112,10 +116,14 @@ export default function Home() {
                                 </h3>
                             </div>
                             <p id="descriptic" class="text-center text-white  ">
-                                  Conoce al 
-                                 <a href="/jurado" className=" text-blue-300 hover:text-blue-100">                                       
-                                 {" "} &nbsp;Jurado evaluador.
-                                  </a>
+                                Conoce al
+                                <a
+                                    href="/jurado"
+                                    className=" text-blue-300 hover:text-blue-100"
+                                >
+                                    {" "}
+                                    &nbsp;Jurado evaluador.
+                                </a>
                             </p>
                         </div>
                     </div>
@@ -180,7 +188,7 @@ export default function Home() {
                                     id="titulo"
                                     class="opacity-1 text-center text-xl font-bold tracking-tight sm:text-2xl  md:text-3xl lg:text-4xl"
                                 >
-                                    receso vacacional{" "}
+                                    Receso vacacional{" "}
                                 </h3>
                             </div>
                         </div>
@@ -260,17 +268,21 @@ export default function Home() {
                                                     id="titulo"
                                                     class="opacity-1 text-xl font-bold tracking-tight sm:text-2xl  md:text-3xl lg:text-4xl"
                                                 >
-                                                    Apertura de convocatoria
+                                                    Apertura de convocatoria.
                                                 </div>
                                             </div>
                                             <div
                                                 id="descriptic"
                                                 class="text-white  "
                                             >
-                                                Revisa la 
-                                                <a href="/" className=" text-blue-300 hover:text-blue-100">                                       
-                                 {" "} &nbsp;Convocatoria.
-                                  </a>
+                                                Revisa la
+                                                <a
+                                                    href="/"
+                                                    className=" text-blue-300 hover:text-blue-100"
+                                                >
+                                                    {" "}
+                                                    &nbsp;Convocatoria.
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -307,7 +319,7 @@ export default function Home() {
                                         <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500/75 to-[#ec2e92]/50  px-4 py-5 shadow">
                                             <div class="mb-2 flex justify-between text-white">
                                                 <div class="text-xl font-bold sm:text-2xl  md:text-3xl lg:text-4xl">
-                                                    Sesiones informativas
+                                                    Sesiones informativas.
                                                 </div>
                                             </div>
                                             <div class="text-white">
@@ -327,13 +339,10 @@ export default function Home() {
                                         <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
                                             <div class="mb-2 flex justify-between text-white">
                                                 <div class="text-xl font-bold sm:text-2xl  md:text-3xl lg:text-4xl">
-                                                    Cierre de convocatoria
+                                                    Cierre de convocatoria.
                                                 </div>
                                             </div>
-                                            <div class="text-white">
-                                                Привет Lorem ipsum dolor sit
-                                                amet,
-                                            </div>
+                                            <div class="text-white"></div>
                                         </div>
                                     </div>
                                     {/* <!--line column--> */}
@@ -369,14 +378,18 @@ export default function Home() {
                                         <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500/75 to-[#ec2e92]/50 px-4 py-5 shadow">
                                             <div class="mb-2 flex justify-between text-white">
                                                 <div class="text-xl font-bold sm:text-2xl  md:text-3xl lg:text-4xl">
-                                                    Evaluación de propuestas
+                                                    Evaluación de propuestas.
                                                 </div>
                                             </div>
                                             <div class="text-white">
-                                                Conoce al 
-                                                    <a href="/jurado" className=" text-blue-300 hover:text-blue-100">                                       
-                                                        {" "} &nbsp;Jurado evaluador.
-                                                    </a>
+                                                Conoce al
+                                                <a
+                                                    href="/jurado"
+                                                    className=" text-blue-300 hover:text-blue-100"
+                                                >
+                                                    {" "}
+                                                    &nbsp;Jurado evaluador.
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -390,13 +403,10 @@ export default function Home() {
                                             <div class="mb-2 flex justify-between text-white">
                                                 <div class="text-xl font-bold sm:text-2xl  md:text-3xl lg:text-4xl">
                                                     Anuncio de personas
-                                                    seleccionadas
+                                                    seleccionadas.
                                                 </div>
                                             </div>
-                                            <div class="text-white">
-                                                Привет Lorem ipsum dolor sit
-                                                amet,
-                                            </div>
+                                            <div class="text-white"></div>
                                         </div>
                                     </div>
                                     {/* <!--line column--> */}
@@ -431,7 +441,8 @@ export default function Home() {
                                         <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500/75 to-[#ec2e92]/50 px-4 py-5 shadow">
                                             <div class="mb-2 flex justify-between text-white">
                                                 <div class="text-xl font-bold sm:text-2xl  md:text-3xl lg:text-4xl">
-                                                    Inicio de etapa de formación
+                                                    Inicio de etapa de
+                                                    formación:
                                                 </div>
                                             </div>
                                             <div class="text-white">
@@ -495,13 +506,10 @@ export default function Home() {
                                         <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
                                             <div class="mb-2 flex justify-between text-white">
                                                 <div class="text-xl font-bold sm:text-2xl  md:text-3xl lg:text-4xl">
-                                                    Receso Vacacional
+                                                    Receso Vacacional.
                                                 </div>
                                             </div>
-                                            <div class="text-white">
-                                                Привет Lorem ipsum dolor sit
-                                                amet,
-                                            </div>
+                                            <div class="text-white"></div>
                                         </div>
                                     </div>
                                     {/* <!--line column--> */}
@@ -537,12 +545,10 @@ export default function Home() {
                                             <div class="mb-2 flex justify-between text-white">
                                                 <div class="text-xl font-bold sm:text-2xl  md:text-3xl lg:text-4xl">
                                                     Reinicio y cierre de etapa
-                                                    de formación
+                                                    de formación.
                                                 </div>
                                             </div>
-                                            <div class="text-white">
-                                                lorem ipsum shit
-                                            </div>
+                                            <div class="text-white"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -554,15 +560,12 @@ export default function Home() {
                                         <div class="flex w-full flex-col rounded-lg bg-gradient-to-r from-indigo-500/50 via-purple-500/75 to-[#ec2e92] px-4 py-5 shadow">
                                             <div class="mb-2 flex justify-between text-white">
                                                 <div class="text-xl font-bold sm:text-2xl  md:text-3xl lg:text-4xl">
-                                                    Premiación y lanzamiento
+                                                    Premiación y lanzamiento.
                                                 </div>
                                             </div>
                                             <div class="text-white">
-                                                Evento de gala a realizarse en
-                                                Poliforum Cultural Universitario
-                                                el día XX de XXXX, a las XXXX,
-                                                con duración de 3 horas. Incluye
-                                                montaje previo al evento.
+                                                Evento a realizarse en Poliforum
+                                                Cultural Universitario
                                             </div>
                                         </div>
                                     </div>
@@ -570,8 +573,8 @@ export default function Home() {
                                     <div class="flex  w-1/5 justify-center">
                                         <div class="relative flex h-full w-1 items-center justify-center bg-[#ec2e92]">
                                             <div class="absolute z-10 flex h-24 w-24 flex-col justify-center rounded-full border-2 border-[#ec2e92] bg-hybrida-bgblue text-center font-bold leading-none text-white">
-                                                <div>17</div>
-                                                <div>Septiembre</div>
+                                                <div>Por</div>
+                                                <div>confirmar</div>
                                             </div>
                                         </div>
                                     </div>
