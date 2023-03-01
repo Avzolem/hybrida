@@ -2,7 +2,7 @@ import MainLayout from "@/components/layouts/MainLayout";
 import Hero from "@/components/hybrida/Hero";
 import Head from "next/head";
 import ParticlesBackground from "../components/hybrida/ParticlesBackground";
-
+import Image from "next/image";
 function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
 }
@@ -24,10 +24,10 @@ export default function Home() {
                     crossorigin="anonymous"
                 ></script>
 
-                <main className="flex flex-col  relative mb-auto">
+                <main className="relative mb-auto  flex flex-col">
                     <div className="mx-auto w-full max-w-7xl pt-16 pb-20 text-center lg:py-32 ">
                         <div className="px-4 sm:px-8 lg:w-full ">
-                            <h1 className="text-4xl font-bold tracking-tight text-white-900 sm:text-5xl md:text-6xl">
+                            <h1 className="text-white-900 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
                                 <span className=" text-white xl:inline">
                                     Explora el{" "}
                                 </span>{" "}
@@ -46,7 +46,7 @@ export default function Home() {
                                         className="flex w-full items-center justify-center rounded-md border border-transparent bg-fuchsia-500 px-8 py-3 text-base font-medium text-white hover:bg-fuchsia-700 md:py-4 md:px-10 md:text-lg"
                                     >
                                         {" "}
-                                        <span>¡Registrate Ahora!  </span>
+                                        <span>¡Aplica Ahora!  </span>
                                         {/* <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             width="25"
@@ -70,23 +70,14 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="convocatoria flex relative absolute h-full w-full mt-6 md:mt-0 justify-center">
+                    <div className="convocatoria absolute relative mt-6 flex h-full w-full justify-center md:mt-0">
                         <a name="init"></a>
                         <Hero />
                     </div>
                     <div></div>
 
-                    <div className="mx-auto w-full max-w-7xl pt-16 pb-20 text-center lg:py-32 ">
+                    <div className="mx-auto w-full max-w-7xl  pb-20 text-center lg:pb-20 ">
                         <div className="px-4 sm:px-8 lg:w-full ">
-                            <h1 className="text-4xl font-bold tracking-tight text-white-900 sm:text-3xl md:text-4xl">
-                                <span className="block text-white xl:inline">
-                                    Da el salto en la inovacion y conoce{" "}
-                                </span>{" "}
-                                <span className="block text-fuchsia-400 xl:inline">
-                                    Hybrida{" "}
-                                </span>
-                            </h1>
-
                             <div className="mt-10 sm:flex sm:justify-center ">
                                 <div className="rounded-md shadow">
                                     <a
@@ -94,10 +85,23 @@ export default function Home() {
                                         className="flex w-full items-center justify-center rounded-md border border-transparent bg-fuchsia-500 px-8 py-3 text-base font-medium text-white hover:bg-fuchsia-700 md:py-4 md:px-10 md:text-lg"
                                     >
                                         {" "}
-                                        <span>¡Registrate Aqui!  </span>
+                                        <span>¡Aplica Ahora!  </span>
                                     </a>
                                     <a name="scroll"></a>
                                 </div>
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+
+                        <div className="flex justify-center">
+                            <div>
+                                <Image
+                                    src="/images/convocatoria/uach+.png"
+                                    alt="Uach+"
+                                    width={300}
+                                    height={92}
+                                />
                             </div>
                         </div>
                     </div>

@@ -16,7 +16,7 @@ const navigation = {
         { name: "Cronograma", href: "/timeline" },
         { name: "Manifiesto", href: "/manifest" },
         { name: "Jurado", href: "/jurado" },
-        { name: "Registro", href: "/contact" },
+        { name: "Aplica", href: "/contact" },
         // { name: "Candy Machine", href: "/candymachine" },
     ],
 };
