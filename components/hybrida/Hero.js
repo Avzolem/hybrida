@@ -143,8 +143,10 @@ export default function Hero() {
                 <div className="mx-auto flex w-full max-w-7xl pt-1 pb-1 text-center sm:pb-1 lg:pb-1 lg:text-left">
                     <div className="flex-auto px-6  sm:px-8 lg:w-1/2 xl:pr-16">
                         <p className="mt-0 mb-1 max-w-md text-lg font-light text-white sm:text-xl md:mt-5 md:max-w-4xl">
-                            Consulta las Bases de la convocatoria, disponibles
-                            en XXXX.XXX.
+                            Consulta las{" "}
+                            <a href="http://www.hybrida.uach.mx/hybrida.pdf">
+                                Bases de la Convocatoria
+                            </a>
                         </p>
                     </div>
                 </div>
