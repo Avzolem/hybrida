@@ -52,7 +52,7 @@ export default function Hero() {
                     />
                 </div>
                 {/* a paragraph with the width in the full screen */}
-                <div className="flex mx-auto w-full max-w-7xl pt-16 pb-1 text-center sm:pb-1 lg:pb-1 lg:text-left">
+                <div className="mx-auto flex w-full max-w-7xl pt-16 pb-1 text-center sm:pb-1 lg:pb-1 lg:text-left">
                     <div className="flex-auto px-6  sm:px-8 lg:w-1/2 xl:pr-16">
                         <p className="mt-3 mb-1 max-w-md text-lg font-light text-white sm:text-xl md:mt-5 md:max-w-4xl">
                             Hybrida es un espacio en el metaverso, especialmente
@@ -72,7 +72,7 @@ export default function Hero() {
                         </span>
                     </h3>
                 </div>
-                <div className="flex mx-auto w-full max-w-7xl pt-1 pb-1 text-center sm:pb-1 lg:pb-1 lg:text-left">
+                <div className="mx-auto flex w-full max-w-7xl pt-1 pb-1 text-center sm:pb-1 lg:pb-1 lg:text-left">
                     <div className="flex-auto px-6  sm:px-8 lg:w-1/2 xl:pr-16">
                         <p className="mt-0 mb-1 max-w-md text-lg font-light text-white sm:text-xl md:mt-5 md:max-w-4xl">
                             Un laboratorio de convergencias entre arte, diseño y
@@ -95,7 +95,7 @@ export default function Hero() {
                         <span className="block xl:inline">Tema y forma:</span>
                     </h3>
                 </div>
-                <div className="flex mx-auto w-full max-w-7xl pt-1 pb-1 text-center sm:pb-1 lg:pb-1 lg:text-left">
+                <div className="mx-auto flex w-full max-w-7xl pt-1 pb-1 text-center sm:pb-1 lg:pb-1 lg:text-left">
                     <div className="flex-auto px-6  sm:px-8 lg:w-1/2 xl:pr-16">
                         <p className="mt-0 mb-1 max-w-md text-lg font-light text-white sm:text-xl md:mt-5 md:max-w-4xl">
                             Libre. Aunque se buscan expresiones creativas y
@@ -115,23 +115,23 @@ export default function Hero() {
                         </span>
                     </h3>
                 </div>
-                <div className="flex mx-auto w-full max-w-7xl pt-1 pb-1 text-center sm:pb-1 lg:pb-1 lg:text-left">
+                <div className="mx-auto flex w-full max-w-7xl pt-1 pb-1 text-center sm:pb-1 lg:pb-1 lg:text-left">
                     <div className="flex-auto px-6  sm:px-8 lg:w-1/2 xl:pr-16">
                         <p className="mt-0 mb-1 max-w-md text-lg font-light text-white sm:text-xl md:mt-5 md:max-w-4xl">
-                            La recepción de solicitudes inicia el X de XXXXX y
-                            cierra el Y de YYYYY. <br />
-                            Proceso de evaluación y selección: X de XXXXX - X de
-                            XXXXX de 2023. <br />
-                            Anuncio de los candidatos seleccionados: X de XXXXX
-                            - X de XXXXX de 2023. <br />
-                            Evaluación de productos obtenidos: X de XXXXX - X de
-                            XXXXX de 2023.
+                            Lanzamiento de la convocatoria: 01 de marzo. <br />
+                            Recepción de solicitudes: 01 al 31 de marzo. <br />
+                            Sesiones informativas: 8, 15 y 22 de marzo.
                             <br />
-                            Anuncio de ganadores: X de XXXXX - X de XXXXX de
-                            2023.
+                            Revision por comité de seleccion: 18 al 27 de abril.
                             <br />
-                            Evento de lanzamiento: Del X de XXXXX al X de XXXXX
-                            de 2023.
+                            Notificacion a candidatos seleccionados: 28 de
+                            abril.
+                            <br />
+                            Capacitación: 2 de mayo al 31 de agosto.
+                            <br />
+                            Premiacion e inauguración de la exposición: 13 de
+                            septiembre.
+                            <br />
                         </p>
                     </div>
                 </div>
@@ -140,7 +140,7 @@ export default function Hero() {
                         <span className="block xl:inline">Más información</span>
                     </h3>
                 </div>
-                <div className="flex mx-auto w-full max-w-7xl pt-1 pb-1 text-center sm:pb-1 lg:pb-1 lg:text-left">
+                <div className="mx-auto flex w-full max-w-7xl pt-1 pb-1 text-center sm:pb-1 lg:pb-1 lg:text-left">
                     <div className="flex-auto px-6  sm:px-8 lg:w-1/2 xl:pr-16">
                         <p className="mt-0 mb-1 max-w-md text-lg font-light text-white sm:text-xl md:mt-5 md:max-w-4xl">
                             Consulta las Bases de la convocatoria, disponibles
@@ -153,7 +153,7 @@ export default function Hero() {
                         <span className="block xl:inline">Aplica en:</span>
                     </h3>
                 </div>
-                <div className="flex mx-auto w-full max-w-7xl pt-1 pb-1 text-center sm:pb-1 lg:pb-1 lg:text-left">
+                <div className="mx-auto flex w-full max-w-7xl pt-1 pb-1 text-center sm:pb-1 lg:pb-1 lg:text-left">
                     <div className="flex-auto px-6  sm:px-8 lg:w-1/2 xl:pr-16">
                         <p className="mt-0 mb-1 max-w-md text-lg font-light text-white sm:text-xl md:mt-5 md:max-w-4xl">
                             hybrida@uach.mx

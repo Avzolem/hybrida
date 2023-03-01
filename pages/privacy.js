@@ -3,7 +3,7 @@ import MainLayout from "@/components/layouts/MainLayout";
 export default function Candymachine() {
     return (
         <MainLayout>
-            <div className="bg-hybrida-bgblue py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24">
+            <div className="overflow-hidden bg-hybrida-bgblue py-16 px-4 sm:px-6 lg:px-8 lg:py-24">
                 <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8">
                     <div className="relative sm:py-16 lg:py-0">
                         <div
@@ -63,7 +63,7 @@ export default function Candymachine() {
                         {/* Content area */}
                         <div className="pt-12 sm:pt-16 lg:pt-20">
                             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                                Politicas de privacidad
+                                Terminos de la convocatoria
                             </h2>
                             <div className="mt-6 space-y-6 text-white">
                                 <p className="text-lg">

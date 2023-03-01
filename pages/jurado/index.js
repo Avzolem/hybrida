@@ -19,30 +19,7 @@ const people = [
         behanceUrl: "#",
         websiteUrl: "#",
     },
-    {
-        name: "Cesar Ortiz",
-        role: "AR Developer",
-        imageUrl: "/images/artistas/cesar.jpeg",
-        twitterUrl: "#",
-        behanceUrl: "#",
-        websiteUrl: "#",
-    },
-    {
-        name: "Andrea Ornelas",
-        role: "Designer",
-        imageUrl: "/images/artistas/andy.jpeg",
-        twitterUrl: "#",
-        behanceUrl: "#",
-        websiteUrl: "#",
-    },
-    {
-        name: "Jonathan Meixueiro",
-        role: "3D Designer",
-        imageUrl: "/images/artistas/jonathan.jpeg",
-        twitterUrl: "#",
-        behanceUrl: "#",
-        websiteUrl: "#",
-    },
+
     // More people...
 ];
 
