@@ -12,12 +12,37 @@ const people = [
         websiteUrl: "https://medusalab.mx/",
     },
     {
+        name: "Ricardo Santos",
+        role: "Artista Digital",
+        imageUrl: "/images/artistas/ricardo.jpg",
+        instagramUrl: "https://www.instagram.com/ricardosaga/",
+        behanceUrl: "#",
+        websiteUrl: "my.matterport.com/show/?m=qxEaTvLiXtp",
+    },
+
+    {
         name: "Iñaki Garrido Frizzi",
         role: "Titular de Museografía y Artes Visuales en el Centro Cultural Universitario Quinta Gameros de la UACH. Cuenta con estudios en artes visuales, filosofía, cine, documental, historia del arte y gestión cultural. Acreedor de becas y apoyos para la producción y difusión de proyectos artísticos a nivel estatal y nacional. Ha presentado obra plástica en México, Ecuador, España, Canadá y Reino Unido e ilustrado para publicaciones a nivel nacional e internacional.",
         imageUrl: "/images/artistas/inaki.jpeg",
         instagramUrl: "https://www.instagram.com/inakigarridofrizzi/",
         behanceUrl: "#",
         websiteUrl: "#",
+    },
+    {
+        name: "Ruth Grajeda",
+        role: "Directora de Difusión Cultural UACH",
+        imageUrl: "/images/artistas/ruth.jpg",
+        instagramUrl: "https://www.instagram.com/uach_mx/",
+        behanceUrl: "#",
+        websiteUrl: "https://uach.mx",
+    },
+    {
+        name: "Monico Payan",
+        role: "Coordinador de Tecnologias de Informacion UACH",
+        imageUrl: "/images/artistas/monico.jpeg",
+        instagramUrl: "https://www.instagram.com/uach_mx/",
+        behanceUrl: "#",
+        websiteUrl: "https://uach.mx",
     },
 
     // More people...
