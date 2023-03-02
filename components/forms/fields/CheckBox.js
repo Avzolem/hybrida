@@ -21,7 +21,7 @@ const CheckBox = ({
             <div className="ml-3 text-sm">
                 <label
                     htmlFor="comments"
-                    className="font-medium capitalize text-hybrida-fuchsia"
+                    className="font-medium  text-hybrida-fuchsia"
                 >
                     {label}
                 </label>

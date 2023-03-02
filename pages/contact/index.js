@@ -187,7 +187,13 @@ const ContactPage = () => {
                             Para aplicar:
                             <br />
                             1. Revisa detenidamente los términos de la
-                            convocatoria.
+                            <a
+                                className="text-sky-500"
+                                href="http://www.hybrida.uach.mx/hybrida.pdf"
+                            >
+                                {" "}
+                                convocatoria.
+                            </a>
                             <br /> 2. Llena el formato que se presenta a
                             continuación.
                         </p>

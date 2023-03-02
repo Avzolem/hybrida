@@ -87,15 +87,19 @@ export default function Hero() {
                             a partir de las múltiples posibilidades de
                             hibridación entre el arte, el diseño y la
                             digitalidad.
+                            <br />
+                            <br />
+                            Permanece al pendiente de este espacio para la
+                            programacion de eventos y actividades futuras.
                         </p>
                     </div>
                 </div>
-                <div className="flex-auto px-6 pt-10 sm:px-8 lg:w-1/2 xl:pr-16">
+                {/* <div className="flex-auto px-6 pt-10 sm:px-8 lg:w-1/2 xl:pr-16">
                     <h3 className="text-2xl tracking-tight text-hybrida-rosalogo sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl">
                         <span className="block xl:inline">Tema y forma:</span>
                     </h3>
-                </div>
-                <div className="mx-auto flex w-full max-w-7xl pt-1 pb-1 text-center sm:pb-1 lg:pb-1 lg:text-left">
+                </div> */}
+                {/* <div className="mx-auto flex w-full max-w-7xl pt-1 pb-1 text-center sm:pb-1 lg:pb-1 lg:text-left">
                     <div className="flex-auto px-6  sm:px-8 lg:w-1/2 xl:pr-16">
                         <p className="mt-0 mb-1 max-w-md text-lg font-light text-white sm:text-xl md:mt-5 md:max-w-4xl">
                             Libre. Aunque se buscan expresiones creativas y
@@ -107,8 +111,9 @@ export default function Hero() {
                             animación 3D, entre otras.
                         </p>
                     </div>
-                </div>
-                <div className="flex-auto px-6 pt-10 sm:px-8 lg:w-1/2 xl:pr-16">
+                </div> */}
+
+                {/* <div className="flex-auto px-6 pt-10 sm:px-8 lg:w-1/2 xl:pr-16">
                     <h3 className="text-2xl tracking-tight text-hybrida-rosalogo sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl">
                         <span className="block xl:inline">
                             Fechas importantes
@@ -134,7 +139,7 @@ export default function Hero() {
                             <br />
                         </p>
                     </div>
-                </div>
+                </div> */}
                 <div className="flex-auto px-6 pt-10 sm:px-8 lg:w-1/2 xl:pr-16">
                     <h3 className="text-2xl tracking-tight text-hybrida-rosalogo sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl">
                         <span className="block xl:inline">Más información</span>
@@ -142,33 +147,30 @@ export default function Hero() {
                 </div>
                 <div className="mx-auto flex w-full max-w-7xl pt-1 pb-1 text-center sm:pb-1 lg:pb-1 lg:text-left">
                     <div className="flex-auto px-6  sm:px-8 lg:w-1/2 xl:pr-16">
-                        <p className="mt-0 mb-1 max-w-md text-lg font-light text-white sm:text-xl md:mt-5 md:max-w-4xl">
+                        <p className="mt-0 mb-1 max-w-md text-lg font-light  text-white sm:text-xl md:mt-5 md:max-w-4xl">
                             Consulta las{" "}
-                            <a href="http://www.hybrida.uach.mx/hybrida.pdf">
+                            <a
+                                className="text-sky-500"
+                                href="http://www.hybrida.uach.mx/hybrida.pdf"
+                            >
                                 Bases de la Convocatoria
                             </a>
                         </p>
                     </div>
                 </div>
-                <div className="flex-auto px-6 pt-10 sm:px-8 lg:w-1/2 xl:pr-16">
-                    <h3 className="text-2xl tracking-tight text-hybrida-rosalogo sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl">
-                        <span className="block xl:inline">Aplica en:</span>
-                    </h3>
-                </div>
+
                 <div className="mx-auto flex w-full max-w-7xl pt-1 pb-1 text-center sm:pb-1 lg:pb-1 lg:text-left">
                     <div className="flex-auto px-6  sm:px-8 lg:w-1/2 xl:pr-16">
-                        <p className="mt-0 mb-1 max-w-md text-lg font-light text-white sm:text-xl md:mt-5 md:max-w-4xl">
-                            hybrida@uach.mx
-                        </p>
+                        <p className="mt-0 mb-1 max-w-md text-lg font-light text-white sm:text-xl md:mt-5 md:max-w-4xl"></p>
                     </div>
                     <div className="flex">
                         <div>
-                            <Image
+                            {/* <Image
                                 src="/images/convocatoria/uach+.png"
                                 alt="Uach+"
                                 width={300}
                                 height={92}
-                            />
+                            /> */}
                         </div>
                         {/* <div className="">
               <Image
