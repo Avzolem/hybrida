@@ -181,7 +181,7 @@ const ContactPage = () => {
                     </svg>
                     <div className="text-center">
                         <h2 className="text-3xl font-bold tracking-tight text-hybrida-fuchsia sm:text-4xl">
-                            APLICA A HYBRIDA 1
+                            APLICA A HYBRIDA
                         </h2>
                         <p className="mt-4 text-lg leading-6 text-white">
                             Para aplicar:
@@ -198,7 +198,7 @@ const ContactPage = () => {
                             <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 lg:gap-x-6 ">
                                 {/* NOMBRE  */}
                                 <Input
-                                    label="Nombre"
+                                    label="Nombre(s)"
                                     name="firstName"
                                     type="text"
                                     register={{
@@ -213,7 +213,7 @@ const ContactPage = () => {
                                 />
                                 {/* APELLIDO  */}
                                 <Input
-                                    label="Apellido"
+                                    label="Apellido(s)"
                                     name="lastName"
                                     type="text"
                                     register={{
@@ -283,7 +283,7 @@ const ContactPage = () => {
 
                             <div className="w-full">
                                 <Input
-                                    label="Categoria de tu trabajo (opcional):"
+                                    label="Categoría de tu trabajo (opcional):"
                                     name="category"
                                     type="text"
                                     register={{
@@ -301,10 +301,6 @@ const ContactPage = () => {
                                     Tres ejemplos, PNG, JPG, GIF. Tamaño Máx. 3
                                     MB c/u,
                                     <br />
-                                    Recuerda renombrar los archivos con tu
-                                    nombre completo
-                                    <br />
-                                    (Ejemplo: Andres_Aguilar_1.png){" "}
                                 </h1>
                                 <br />
 
@@ -359,9 +355,10 @@ const ContactPage = () => {
 
                             <div className="w-full">
                                 <Input
-                                    label="Link a portafolio o descarga (opcional):"
+                                    label="Link a portafolio o descarga adicional (opcional):"
                                     name="portafolio"
                                     type="text"
+                                    placeholder="Cualquier elemento adicional que nos permita conocer mejor tu trabajo."
                                     register={{
                                         ...register("portafolio", {}),
                                     }}
@@ -392,7 +389,7 @@ const ContactPage = () => {
 
                             <div className="w-full">
                                 <TextArea
-                                    label="¿Cómo te enteraste de HYBRIDA 1?"
+                                    label="¿Cómo te enteraste de HYBRIDA?"
                                     name="comoteenteraste"
                                     type="text"
                                     register={{
@@ -514,7 +511,7 @@ const ContactPage = () => {
                                             <LoadingCircle />
                                         </div>
                                     ) : (
-                                        "Entrar al metaverso!"
+                                        "Enviar mi aplicacion."
                                     )}
                                 </button>
                                 <input

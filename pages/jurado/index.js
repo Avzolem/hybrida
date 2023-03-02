@@ -13,8 +13,8 @@ const people = [
     },
     {
         name: "Ricardo Santos",
-        role: "Artista Digital",
-        imageUrl: "/images/artistas/ricardo.jpg",
+        role: "Artista plástico originario de la ciudad de Chihuahua, actualmente reside en la Ciudad de México. Su obra ha sido exhibida en espacios nacionales como NoEsUnaGalería, Museo de Arte Moderno de la Ciudad de México, Museo Franz Mayer; y asi como en COBRA Museo, Art House Holland, NDSM Fuse Amsterdam, Museum de Lakenhal y Old School Gallery, en los Países Bajos. Ha realizado residencias en Art House Holland, Países Bajos. Co-fundador de NoEsUnaGalería, plataforma para artistas emergentes, con sedes en Ciudad de México y en Utrecht, Países Bajos. Su obra se caracteriza por el cruce entre las técnicas de dibujo y la materialidad de la pintura, en continua experimentación.",
+        imageUrl: "/images/artistas/ricardo.jpeg",
         instagramUrl: "https://www.instagram.com/ricardosaga/",
         behanceUrl: "#",
         websiteUrl: "my.matterport.com/show/?m=qxEaTvLiXtp",
@@ -64,8 +64,9 @@ export default function Home() {
                                     Conoce a nuestro Jurado Evaluador
                                 </h2>
                                 <p className="text-xl text-gray-300">
-                                    Conoce a quienes dan vida a nuestro
-                                    metaverso y conecta con ellos.
+                                    Integrado por actores relevantes de las
+                                    artes, la cultura, la academia y la
+                                    tecnologia:
                                 </p>
                             </div>
                             <ul

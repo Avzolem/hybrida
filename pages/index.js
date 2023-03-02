@@ -24,10 +24,10 @@ export default function Home() {
                     crossorigin="anonymous"
                 ></script>
 
-                <main className="flex flex-col  relative mb-auto">
+                <main className="relative mb-auto  flex flex-col">
                     <div className="mx-auto w-full max-w-7xl pt-16 pb-20 text-center lg:py-32 ">
                         <div className="px-4 sm:px-8 lg:w-full ">
-                            <h1 className="text-4xl font-bold tracking-tight text-white-900 sm:text-5xl md:text-6xl">
+                            <h1 className="text-white-900 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
                                 <span className=" text-white xl:inline">
                                     Explora el{" "}
                                 </span>{" "}
@@ -64,13 +64,13 @@ export default function Home() {
                                         href="#init"
                                         className="flex w-full items-center justify-center rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-fuchsia-500 hover:bg-gray-100 md:py-4 md:px-10 md:text-lg"
                                     >
-                                        ¿Que es Hybrida?
+                                        ¿Qué es Hybrida?
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="convocatoria flex relative absolute h-full w-full mt-6 md:mt-0 justify-center">
+                    <div className="convocatoria absolute relative mt-6 flex h-full w-full justify-center md:mt-0">
                         <a name="init"></a>
                         <Hero />
                     </div>
@@ -78,7 +78,7 @@ export default function Home() {
 
                     <div className="mx-auto w-full max-w-7xl pt-16 pb-20 text-center lg:py-32 ">
                         <div className="px-4 sm:px-8 lg:w-full ">
-                            <h1 className="text-4xl font-bold tracking-tight text-white-900 sm:text-3xl md:text-4xl">
+                            <h1 className="text-white-900 text-4xl font-bold tracking-tight sm:text-3xl md:text-4xl">
                                 <span className="block text-white xl:inline">
                                     Da el salto en la inovacion y conoce{" "}
                                 </span>{" "}

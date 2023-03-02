@@ -17,6 +17,11 @@ const navigation = {
         { name: "Manifiesto", href: "/manifest" },
         { name: "Jurado", href: "/jurado" },
         { name: "Registro", href: "/contact" },
+        {
+            name: "Convocatoria",
+            href: "http://www.hybrida.uach.mx/hybrida.pdf",
+            target: "_blank",
+        },
         // { name: "Candy Machine", href: "/candymachine" },
     ],
 };
