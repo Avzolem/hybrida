@@ -19,6 +19,14 @@ const people = [
         behanceUrl: "#",
         websiteUrl: "my.matterport.com/show/?m=qxEaTvLiXtp",
     },
+    {
+        name: "Abraham González Bejarano",
+        role: "Trabaja con distintos medios que se enfocan en la evocación, creación y percepción sonora. Sus intereses incluyen la creación colaborativa, los procesos sinestésicos, el uso de formatos alternativos a la partitura y la multiplicidad en el proceso creativo. Reside en la ciudad de Chihuahua.",
+        imageUrl: "/images/artistas/abraham.jpeg",
+        instagramUrl: "#",
+        behanceUrl: "#",
+        websiteUrl: "#",
+    },
 
     {
         name: "Iñaki Garrido Frizzi",
