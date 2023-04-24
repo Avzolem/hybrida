@@ -3,7 +3,7 @@ import MainLayout from "@/components/layouts/MainLayout";
 const ContactPage = () => {
     return (
         <MainLayout title="Exito" childrenClassName="h-screen">
-            <div className="h-min-screen h-full  bg-hybrida-bgblue ">
+            <div className="h-min-screen h-full  bg-black">
                 <div className="relative mx-auto max-w-xl">
                     <div className="flex h-screen items-center justify-center">
                         <div className="rounded-xl bg-white px-12 text-center">
@@ -70,7 +70,7 @@ const ContactPage = () => {
 
                             <div className="pt-6 pb-20">
                                 <a href="/">
-                                    <button className="inline-flex items-center rounded-full border border-transparent bg-hybrida-fuchsia px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-fuchsia-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2">
+                                    <button className="inline-flex items-center rounded-full border border-transparent bg-purple-500 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-fuchsia-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2">
                                         Regresar a la página principal
                                     </button>
                                 </a>
