@@ -42,11 +42,11 @@ export default function Home() {
                             <div className="mt-10 sm:flex sm:justify-center ">
                                 <div className="rounded-md shadow">
                                     <a
-                                        href="/contact"
+                                        href="/ganadores"
                                         className="flex w-full items-center justify-center rounded-md border border-transparent bg-fuchsia-500 px-8 py-3 text-base font-medium text-white hover:bg-fuchsia-700 md:py-4 md:px-10 md:text-lg"
                                     >
                                         {" "}
-                                        <span>¡Aplica Ahora!  </span>
+                                        <span>¡Conoce a los Ganadores!  </span>
                                         {/* <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             width="25"
@@ -70,7 +70,7 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="convocatoria absolute relative mt-6 flex h-full w-full justify-center md:mt-0">
+                    <div className="convocatoria  relative mt-6 flex h-full w-full justify-center md:mt-0">
                         <a name="init"></a>
                         <Hero />
                     </div>
@@ -81,11 +81,11 @@ export default function Home() {
                             <div className="mt-10 sm:flex sm:justify-center ">
                                 <div className="rounded-md shadow">
                                     <a
-                                        href="/contact"
+                                        href="/ganadores"
                                         className="flex w-full items-center justify-center rounded-md border border-transparent bg-fuchsia-500 px-8 py-3 text-base font-medium text-white hover:bg-fuchsia-700 md:py-4 md:px-10 md:text-lg"
                                     >
                                         {" "}
-                                        <span>¡Aplica Ahora!  </span>
+                                        <span>¡Conoce a los Ganadores!  </span>
                                     </a>
                                     <a name="scroll"></a>
                                 </div>

@@ -16,11 +16,19 @@ const navigation = {
         { name: "Cronograma", href: "/timeline" },
         { name: "Manifiesto", href: "/manifest" },
         { name: "Jurado", href: "/jurado" },
-        { name: "Registro", href: "/contact" },
         {
             name: "Convocatoria",
             href: "http://www.hybrida.uach.mx/hybrida.pdf",
             target: "_blank",
+        },
+        {
+            name: "Workshop",
+            href: "https://www.notion.so/Modulo-01-Bienvenide-a-Hybrida-1f6ca1e3555043dcbfc868ccb60539ca",
+            target: "_blank",
+        },
+        {
+            name: "Ganadores",
+            href: "/ganadores",
         },
         // { name: "Candy Machine", href: "/candymachine" },
     ],

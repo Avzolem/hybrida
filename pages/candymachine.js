@@ -17,11 +17,11 @@ export default function Candymachine() {
                     </h2>
 
                     <div className="mt-8 flex justify-center">
-                        <div class="carousel rounded-box w-96 justify-center">
-                            <div class="carousel-item w-full">
+                        <div className="carousel rounded-box w-96 justify-center">
+                            <div className="carousel-item w-full">
                                 <img
                                     src="/images/nft2.png"
-                                    class="w-full"
+                                    className="w-full"
                                     alt="Tailwind CSS Carousel component"
                                 />
                             </div>

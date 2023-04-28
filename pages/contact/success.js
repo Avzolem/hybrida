@@ -28,7 +28,7 @@ const ContactPage = () => {
                                             href="mailto:hybrida@uach.mx"
                                             target="_blank"
                                         >
-                                            <p class="font-bold text-sky-400/100">
+                                            <p className="font-bold text-sky-400/100">
                                                 hybrida@uach.mx
                                             </p>
                                         </a>
@@ -40,7 +40,7 @@ const ContactPage = () => {
                                             href="https://www.instagram.com/hybrida.uach/"
                                             target="_blank"
                                         >
-                                            <p class="font-bold text-pink-400/100">
+                                            <p className="font-bold text-pink-400/100">
                                                 @hybrida.uach
                                             </p>
                                         </a>
@@ -51,7 +51,7 @@ const ContactPage = () => {
                                             href="https://discord.gg/6g7rZTsaCP"
                                             target="_blank"
                                         >
-                                            <p class="font-bold text-purple-600">
+                                            <p className="font-bold text-purple-600">
                                                 @hybridauach
                                             </p>
                                         </a>
