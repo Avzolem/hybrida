@@ -34,7 +34,7 @@ const people = [
 
 export default function Home() {
     return (
-        <div>
+        <>
             <ParticlesBackground />
             <MainLayout
                 title="artistas"
@@ -182,6 +182,6 @@ export default function Home() {
                     </div>
                 </div>
             </MainLayout>
-        </div>
+        </>
     );
 }

@@ -1,30 +1,14 @@
 import MainLayout from "@/components/layouts/MainLayout";
 import Hero from "@/components/hybrida/Hero";
-import Head from "next/head";
 import ParticlesBackground from "../components/hybrida/ParticlesBackground";
 import Image from "next/image";
-function classNames(...classes) {
-    return classes.filter(Boolean).join(" ");
-}
 
 export default function Home() {
     return (
-        <div>
+        <>
             <ParticlesBackground />
             <MainLayout>
-                <Head>
-                    <title>Hybrida</title>
-                    <meta
-                        name="description"
-                        content="Hybrida es una plataforma de arte digital que busca crear un espacio de colaboración entre artistas y coleccionistas."
-                    />
-                </Head>
-                <script
-                    src="https://kit.fontawesome.com/16679573af.js"
-                    crossorigin="anonymous"
-                ></script>
-
-                <main className="relative mb-auto  flex flex-col">
+                <div className="relative mb-auto  flex flex-col">
                     <div className="mx-auto w-full max-w-7xl pt-16 pb-20 text-center lg:py-32 ">
                         <div className="px-4 sm:px-8 lg:w-full ">
                             <h1 className="text-white-900 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
@@ -105,8 +89,8 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </main>
+                </div>
             </MainLayout>
-        </div>
+        </>
     );
 }
