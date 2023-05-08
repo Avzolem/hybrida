@@ -42,9 +42,9 @@ export default function Hero() {
                         </p>
                     </div>
                 </div>
-                <div className="relative h-64 w-full px-12 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2">
+                <div className=" relative h-64 w-auto px-12 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-auto">
                     <Image
-                        className="absolute inset-0 h-full w-full object-cover"
+                        className=" inset-0 h-full w-full object-cover"
                         src="/images/convocatoria/hybrida-esfera.png"
                         alt="Hybrida esfera"
                         width={500}
@@ -145,7 +145,7 @@ export default function Hero() {
                         <span className="block xl:inline">Más información</span>
                     </h3>
                 </div>
-                <div className="mx-auto flex w-full max-w-7xl pt-1 pb-1 text-center sm:pb-1 lg:pb-1 lg:text-left">
+                {/* <div className="mx-auto flex w-full max-w-7xl pt-1 pb-1 text-center sm:pb-1 lg:pb-1 lg:text-left">
                     <div className="flex-auto px-6  sm:px-8 lg:w-1/2 xl:pr-16">
                         <p className="mt-0 mb-1 max-w-md text-lg font-light  text-white sm:text-xl md:mt-5 md:max-w-4xl">
                             Consulta las{" "}
@@ -157,7 +157,7 @@ export default function Hero() {
                             </a>
                         </p>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="mx-auto flex w-full max-w-7xl pt-1 pb-1 text-center sm:pb-1 lg:pb-1 lg:text-left">
                     <div className="flex-auto px-6  sm:px-8 lg:w-1/2 xl:pr-16">

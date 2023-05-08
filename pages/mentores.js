@@ -3,47 +3,29 @@ import ParticlesBackground from "@/components/hybrida/ParticlesBackground";
 
 const people = [
     {
-        name: "Ary Ehrenberg",
-        role: "Director artístico y cofundador del laboratorio creativo Medusa. Su práctica artística se enfoca en la relación entre medios y entorno. Co-fundó y fungió como director en el Laboratorio de inmersión BBVA bancomer - Centro de Cultura Digital.",
-        imageUrl: "/images/artistas/ary.jpeg",
-        twitterUrl: "https://twitter.com/AryEhrenberg",
-        behanceUrl: "#",
-        instagramUrl: "https://www.instagram.com/medusalabmx/",
-        websiteUrl: "https://medusalab.mx/",
+        name: "Andrés Aguilar",
+        role: "Blockchain Developer",
+        imageUrl: "/images/artistas/andres.jpg",
+        twitterUrl: "https://twitter.com/avsolem",
+        instagramUrl: "https://www.instagram.com/avsolem/",
+        websiteUrl: "avsolem.com",
     },
     {
-        name: "Ricardo Santos",
-        role: "Artista plástico originario de la ciudad de Chihuahua, actualmente reside en la Ciudad de México. Su obra ha sido exhibida en espacios nacionales como NoEsUnaGalería, Museo de Arte Moderno de la Ciudad de México, Museo Franz Mayer; y asi como en COBRA Museo, Art House Holland, NDSM Fuse Amsterdam, Museum de Lakenhal y Old School Gallery, en los Países Bajos. Ha realizado residencias en Art House Holland, Países Bajos. Co-fundador de NoEsUnaGalería, plataforma para artistas emergentes, con sedes en Ciudad de México y en Utrecht, Países Bajos. Su obra se caracteriza por el cruce entre las técnicas de dibujo y la materialidad de la pintura, en continua experimentación.",
-        imageUrl: "/images/artistas/ricardo.jpeg",
-        instagramUrl: "https://www.instagram.com/ricardosaga/",
-        behanceUrl: "#",
-        websiteUrl: "my.matterport.com/show/?m=qxEaTvLiXtp",
+        name: "Bart Lopez",
+        role: "Web Developer",
+        imageUrl: "/images/artistas/bart.jpeg",
+        twitterUrl: "https://twitter.com/yosoybartsolo",
+        instagramUrl: "https://www.instagram.com/yosoybartsolo/",
+        websiteUrl: "molus.co",
     },
-
     {
-        name: "Iñaki Garrido Frizzi",
-        role: "Titular de Museografía y Artes Visuales en el Centro Cultural Universitario Quinta Gameros de la UACH. Cuenta con estudios en artes visuales, filosofía, cine, documental, historia del arte y gestión cultural. Acreedor de becas y apoyos para la producción y difusión de proyectos artísticos a nivel estatal y nacional. Ha presentado obra plástica en México, Ecuador, España, Canadá y Reino Unido e ilustrado para publicaciones a nivel nacional e internacional.",
-        imageUrl: "/images/artistas/inaki.jpeg",
-        instagramUrl: "https://www.instagram.com/inakigarridofrizzi/",
-        behanceUrl: "#",
-        websiteUrl: "#",
+        name: "Cesar Ortiz",
+        role: "VR & AR Developer",
+        imageUrl: "/images/artistas/cesar.jpeg",
+        instagramUrl: "https://www.instagram.com/edopalomino/",
+        twitterUrl: "https://twitter.com/edopalomino",
+        websiteUrl: "edopalomino.com",
     },
-    // {
-    //     name: "Ruth Grajeda",
-    //     role: "Directora de Difusión Cultural UACH",
-    //     imageUrl: "/images/artistas/ruth.jpg",
-    //     instagramUrl: "https://www.instagram.com/uach_mx/",
-    //     behanceUrl: "#",
-    //     websiteUrl: "https://uach.mx",
-    // },
-    // {
-    //     name: "Monico Payan",
-    //     role: "Coordinador de Tecnologias de Informacion UACH",
-    //     imageUrl: "/images/artistas/monico.jpeg",
-    //     instagramUrl: "https://www.instagram.com/uach_mx/",
-    //     behanceUrl: "#",
-    //     websiteUrl: "https://uach.mx",
-    // },
 
     // More people...
 ];
@@ -61,12 +43,11 @@ export default function Home() {
                         <div className="space-y-12">
                             <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
                                 <h2 className="text-3xl font-bold tracking-tight text-hybrida-fuchsia sm:text-4xl">
-                                    Conoce a nuestro Jurado Evaluador
+                                    Conoce a nuestros Mentores
                                 </h2>
                                 <p className="text-xl text-gray-300">
-                                    Integrado por actores relevantes de las
-                                    artes, la cultura, la academia y la
-                                    tecnologia:
+                                    Integrado por el equipo de desarrolladores
+                                    que dieron vida a la plataforma Hybrida.
                                 </p>
                             </div>
                             <ul

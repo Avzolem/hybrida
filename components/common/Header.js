@@ -16,11 +16,12 @@ const navigation = {
         { name: "Cronograma", href: "/timeline" },
         { name: "Manifiesto", href: "/manifest" },
         { name: "Jurado", href: "/jurado" },
-        {
-            name: "Convocatoria",
-            href: "http://www.hybrida.uach.mx/hybrida.pdf",
-            target: "_blank",
-        },
+        // {
+        //     name: "Convocatoria",
+        //     href: "http://www.hybrida.uach.mx/hybrida.pdf",
+        //     target: "_blank",
+        // },
+        { name: "Mentores", href: "/mentores" },
         {
             name: "Workshop",
             href: "/workshop",
@@ -104,13 +105,11 @@ const Header = () => {
                 <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-5 sm:px-6 sm:py-4 md:justify-start md:space-x-10 lg:px-8">
                     <div>
                         <Link href="/" className="flex">
-
                             <img
                                 className="h-8 w-auto sm:h-10"
                                 src={logoUrl}
                                 alt="hybrida logo"
                             />
-
                         </Link>
                     </div>
                     <div className="-my-2 -mr-2 md:hidden">
@@ -122,14 +121,13 @@ const Header = () => {
                     <div className="hidden md:flex md:flex-1 md:items-center md:justify-between">
                         <Popover.Group as="nav" className="flex space-x-10">
                             {navigation.pages.map((page) => (
-                                (<Link
+                                <Link
                                     key={page.name}
                                     href={page.href}
-                                    className="text-base font-medium text-hybrida-fuchsia hover:text-pink-300">
-
+                                    className="text-base font-medium text-hybrida-fuchsia hover:text-pink-300"
+                                >
                                     {page.name}
-
-                                </Link>)
+                                </Link>
                             ))}
                         </Popover.Group>
                         {/* HEADER DEKTOP RIGHT SECTION BUTTONS */}
@@ -173,10 +171,9 @@ const Header = () => {
                                                                 ? "bg-gray-100"
                                                                 : "",
                                                             "block px-4 py-2 text-sm text-gray-700"
-                                                        )}>
-                                                        
-                                                            Mi Cuenta
-                                                        
+                                                        )}
+                                                    >
+                                                        Mi Cuenta
                                                     </Link>
                                                 )}
                                             </Menu.Item>
@@ -190,10 +187,9 @@ const Header = () => {
                                                                     ? "bg-gray-100"
                                                                     : "",
                                                                 "block px-4 py-2 text-sm text-gray-700"
-                                                            )}>
-                                                            
-                                                                Admin Dashboard
-                                                            
+                                                            )}
+                                                        >
+                                                            Admin Dashboard
                                                         </Link>
                                                     )}
                                                 </Menu.Item>
@@ -253,14 +249,12 @@ const Header = () => {
                             <div className="flex items-center justify-between">
                                 <div>
                                     <Link href="/">
-
                                         {" "}
                                         <img
                                             className="h-8 w-auto"
                                             src={logoUrl}
                                             alt="logo"
                                         />
-
                                     </Link>
                                 </div>
                                 <div className="-mr-2">
@@ -276,14 +270,13 @@ const Header = () => {
                         <div className="py-6 px-5">
                             <div className="grid grid-cols-2 gap-4">
                                 {navigation.pages.map((page) => (
-                                    (<Link
+                                    <Link
                                         key={page.name}
                                         href={page.href}
-                                        className="rounded-md text-base font-medium text-hybrida-fuchsia hover:text-gray-700">
-
+                                        className="rounded-md text-base font-medium text-hybrida-fuchsia hover:text-gray-700"
+                                    >
                                         {page.name}
-
-                                    </Link>)
+                                    </Link>
                                 ))}
                             </div>
                         </div>
