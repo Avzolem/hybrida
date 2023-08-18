@@ -233,7 +233,7 @@ export default function Home() {
                                                 </span>{" "}
                                                 <br />
                                                 <span className=" bg-gradient-to-r  from-cyan-500 via-indigo-500  to-purple-500 bg-clip-text text-transparent xl:inline">
-                                                    Hibrido{" "}
+                                                    Híbrido{" "}
                                                 </span>
                                             </h1>
                                             <h1 className="text-md text-center tracking-tight md:text-xl">
@@ -272,10 +272,14 @@ export default function Home() {
                                         {/* Aqui va la imagen */}
                                         <div className="relative isolate mx-auto overflow-hidden sm:mx-0 sm:max-w-none">
                                             {" "}
-                                            <img
-                                                src="/images/obras/hibrido.png"
-                                                className="w-[40rem]"
-                                            />
+                                            <video
+                                                src="/images/obras/hibrido.mp4"
+                                                autoplay
+                                                controls
+                                            >
+                                                Tu navegador no admite el
+                                                elemento <code>video</code>.
+                                            </video>
                                         </div>
                                     </div>
                                 </div>
