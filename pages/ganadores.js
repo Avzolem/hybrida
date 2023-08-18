@@ -60,6 +60,7 @@ export default function Home() {
                                             <video
                                                 src="/images/obras/horizonte.mp4"
                                                 autoplay
+                                                controls
                                             >
                                                 Tu navegador no admite el
                                                 elemento <code>video</code>.
@@ -152,6 +153,7 @@ export default function Home() {
                                             <video
                                                 src="/images/obras/sirena.mp4"
                                                 autoplay
+                                                controls
                                             >
                                                 Tu navegador no admite el
                                                 elemento <code>video</code>.
@@ -175,6 +177,7 @@ export default function Home() {
                                             <video
                                                 src="/images/obras/burritos.mp4"
                                                 autoplay
+                                                controls
                                             >
                                                 Tu navegador no admite el
                                                 elemento <code>video</code>.
@@ -292,6 +295,7 @@ export default function Home() {
                                             <video
                                                 src="/images/obras/fernando.mp4"
                                                 autoplay
+                                                controls
                                             >
                                                 Tu navegador no admite el
                                                 elemento <code>video</code>.
