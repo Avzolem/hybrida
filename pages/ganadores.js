@@ -49,7 +49,294 @@ export default function Home() {
                                     convocatoria 2023
                                 </h2>
                             </div>
-                            <ul
+
+                            {/*  simple title to the right and image to the left*/}
+                            <section className="relative">
+                                <div className="mx-auto max-w-7xl md:px-6 lg:px-8">
+                                    <div className="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
+                                        <div className="relative isolate mx-auto max-w-2xl overflow-hidden sm:mx-0 sm:max-w-none">
+                                            {" "}
+                                            {/* Aqui va la imagen */}
+                                            <video
+                                                src="/images/obras/horizonte.mp4"
+                                                autoplay
+                                            >
+                                                Tu navegador no admite el
+                                                elemento <code>video</code>.
+                                            </video>
+                                        </div>
+
+                                        {/* Aqui va el texto */}
+                                        <div className="m-auto">
+                                            <h1 className=" text-center text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl">
+                                                <span className=" text-white ">
+                                                    Virginia Sarahí Covarrubias
+                                                    León{" "}
+                                                </span>{" "}
+                                                <span className=" bg-gradient-to-r  from-cyan-500 via-indigo-500  to-purple-500 bg-clip-text text-transparent xl:inline">
+                                                    Horizonte de eventos{" "}
+                                                </span>
+                                            </h1>
+                                            <h1 className="text-md text-center tracking-tight md:text-xl">
+                                                <span className=" text-white xl:inline">
+                                                    Horizonte de eventos es
+                                                    encaminado a crear un mundo
+                                                    virtual con diferentes
+                                                    escenarios en los que se de
+                                                    la interacción del usuario
+                                                    con piezas tridimensionales
+                                                    y bidimensionales, las
+                                                    cuales serán creadas con
+                                                    ayuda de software de edición
+                                                    de imagen, modelado e
+                                                    inteligencia artificial.
+                                                    Para su visualización se
+                                                    contempla el uso de lentes
+                                                    VR en un espacio que permita
+                                                    el movimiento a los
+                                                    participantes, teniendo a la
+                                                    par la visualización de lo
+                                                    que ocurre durante la
+                                                    intervención a través de un
+                                                    monitor o pantalla.{" "}
+                                                </span>
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+
+                            {/*  simple title to the left and image to the right*/}
+                            <section className="relative">
+                                <div className="mx-auto max-w-7xl md:px-6 lg:px-8">
+                                    <div className="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
+                                        {/* Aqui va el texto */}
+
+                                        <div className="m-auto">
+                                            <h1 className=" text-center text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl">
+                                                <span className=" text-white ">
+                                                    Ángel Javier Machado Favela{" "}
+                                                </span>{" "}
+                                                <br />
+                                                <span className=" bg-gradient-to-r  from-cyan-500 via-indigo-500  to-purple-500 bg-clip-text text-transparent xl:inline">
+                                                    El rey de las emociones
+                                                    profundas{" "}
+                                                </span>
+                                            </h1>
+                                            <h1 className="text-md text-center tracking-tight md:text-xl">
+                                                <span className=" text-white xl:inline">
+                                                    Con el concepto ya
+                                                    identificado comence a
+                                                    realizar bocetos a lápiz y
+                                                    digital. Después opte por
+                                                    representar mi ilustración
+                                                    con un mecanismo más
+                                                    innovador, ayudarme de la
+                                                    tecnología de los oculus y
+                                                    realidad virtual en un
+                                                    programa de google llamado
+                                                    Multibrush para una
+                                                    apreciación y experiencia
+                                                    diferente al ver la
+                                                    ilustración.{" "}
+                                                </span>
+                                            </h1>
+                                        </div>
+                                        {/* Aqui va la imagen */}
+                                        <div className="relative isolate mx-auto overflow-hidden sm:mx-0 sm:max-w-none">
+                                            {" "}
+                                            <video
+                                                src="/images/obras/sirena.mp4"
+                                                autoplay
+                                            >
+                                                Tu navegador no admite el
+                                                elemento <code>video</code>.
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+
+                            {/*  simple title to the right and image to the left*/}
+                            <section className="relative">
+                                <div className="mx-auto max-w-7xl md:px-6 lg:px-8">
+                                    <div className="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
+                                        <div className="relative isolate mx-auto max-w-2xl overflow-hidden sm:mx-0 sm:max-w-none">
+                                            {" "}
+                                            {/* Aqui va la imagen */}
+                                            <video
+                                                src="/images/obras/burritos.mp4"
+                                                autoplay
+                                            >
+                                                Tu navegador no admite el
+                                                elemento <code>video</code>.
+                                            </video>
+                                        </div>
+
+                                        {/* Aqui va el texto */}
+                                        <div className="m-auto">
+                                            <h1 className=" text-center text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl">
+                                                <span className=" text-white ">
+                                                    José Carlos Lozoya Loya{" "}
+                                                </span>{" "}
+                                                <span className=" bg-gradient-to-r  from-cyan-500 via-indigo-500  to-purple-500 bg-clip-text text-transparent xl:inline">
+                                                    “Burritron” La
+                                                    transformación de la
+                                                    gastronomía urbana.{" "}
+                                                </span>
+                                            </h1>
+                                            <h1 className="text-md text-center tracking-tight md:text-xl">
+                                                <span className=" text-white xl:inline">
+                                                    Con necesidad de exponer la
+                                                    vida cotidiana del
+                                                    chihuahuense expresada de
+                                                    manera contemporánea
+                                                    llegamos a la idea de crear
+                                                    un personaje que cambia su
+                                                    forma como la gastronomía
+                                                    Chihuahuense, recordándonos
+                                                    los paisajes urbanos que
+                                                    vemos en nuestro día a día.{" "}
+                                                </span>
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+
+                            {/*  simple title to the left and image to the right*/}
+                            <section className="relative">
+                                <div className="mx-auto max-w-7xl md:px-6 lg:px-8">
+                                    <div className="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
+                                        {/* Aqui va el texto */}
+
+                                        <div className="m-auto">
+                                            <h1 className=" text-center text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl">
+                                                <span className=" text-white ">
+                                                    Okani Alejandro Contreras
+                                                    Ceniceros{" "}
+                                                </span>{" "}
+                                                <br />
+                                                <span className=" bg-gradient-to-r  from-cyan-500 via-indigo-500  to-purple-500 bg-clip-text text-transparent xl:inline">
+                                                    Hibrido{" "}
+                                                </span>
+                                            </h1>
+                                            <h1 className="text-md text-center tracking-tight md:text-xl">
+                                                <span className=" text-white xl:inline">
+                                                    El concepto detrás de la
+                                                    obra, es simple; busca
+                                                    romper el taboo e
+                                                    incertidumbre que la IA está
+                                                    generando en el medio
+                                                    artístico, detrás de cada
+                                                    prompt hay una mente que lo
+                                                    generó y una máquina que lo
+                                                    ejecutó. La máquina no viene
+                                                    a reemplazar al humano,
+                                                    viene a acompañarlo y a
+                                                    generar nuevas corrientes
+                                                    artísticas si lo queremos
+                                                    llamar de esta maneraEl
+                                                    concepto detrás de la obra,
+                                                    es simple; busca romper el
+                                                    taboo e incertidumbre que la
+                                                    IA está generando en el
+                                                    medio artístico, detrás de
+                                                    cada prompt hay una mente
+                                                    que lo generó y una máquina
+                                                    que lo ejecutó. La máquina
+                                                    no viene a reemplazar al
+                                                    humano, viene a acompañarlo
+                                                    y a generar nuevas
+                                                    corrientes artísticas si lo
+                                                    queremos llamar de esta
+                                                    manera{" "}
+                                                </span>
+                                            </h1>
+                                        </div>
+                                        {/* Aqui va la imagen */}
+                                        <div className="relative isolate mx-auto overflow-hidden sm:mx-0 sm:max-w-none">
+                                            {" "}
+                                            <img
+                                                src="/images/obras/hibrido.png"
+                                                className="w-[40rem]"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+
+                            {/*  simple title to the right and image to the left*/}
+                            <section className="relative">
+                                <div className="mx-auto max-w-7xl md:px-6 lg:px-8">
+                                    <div className="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
+                                        <div className="relative isolate mx-auto max-w-2xl overflow-hidden sm:mx-0 sm:max-w-none">
+                                            {" "}
+                                            {/* Aqui va la imagen */}
+                                            <video
+                                                src="/images/obras/fernando.mp4"
+                                                autoplay
+                                            >
+                                                Tu navegador no admite el
+                                                elemento <code>video</code>.
+                                            </video>
+                                        </div>
+
+                                        {/* Aqui va el texto */}
+                                        <div className="m-auto">
+                                            <h1 className=" text-center text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl">
+                                                <span className=" text-white ">
+                                                    Rey Fernando Montes Trevizo{" "}
+                                                </span>{" "}
+                                                <span className=" bg-gradient-to-r  from-cyan-500 via-indigo-500  to-purple-500 bg-clip-text text-transparent xl:inline">
+                                                    Omnipresencia -
+                                                    Desdoblamiento de una imagen{" "}
+                                                </span>
+                                            </h1>
+                                            <h1 className="text-md text-center tracking-tight md:text-xl">
+                                                <span className=" text-white xl:inline">
+                                                    Es un concepto de estar en
+                                                    todas partes y al mismo
+                                                    tiempo, ha sido abordado
+                                                    desde diferentes puntos
+                                                    sobre todo el espiritual o
+                                                    religioso. En mi idea de
+                                                    trasmitir esta idea a una
+                                                    imagen la fotografía
+                                                    panorámica permite desde un
+                                                    solo punto de vista observar
+                                                    el interior de un inmueble
+                                                    deformando la perspectiva en
+                                                    360°, algo imposible para el
+                                                    ojo humano.{" "}
+                                                </span>
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+
+                            {/* <ul
                                 role="list"
                                 className="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-3 lg:gap-8"
                             >
@@ -74,7 +361,7 @@ export default function Home() {
                                                     </p>
                                                 </div>
 
-                                                {/* <ul
+                                                <ul
                                                     role="list"
                                                     className="flex justify-center space-x-5"
                                                 >
@@ -166,16 +453,16 @@ export default function Home() {
                                                             </svg>
                                                         </a>
                                                     </li>
-                                                </ul> */}
+                                                </ul>
                                             </div>
                                         </div>
                                     </li>
                                 ))}
-                            </ul>
+                            </ul> */}
                             <div className="text-center">
                                 <p className="text-4xl text-hybrida-fuchsia">
-                                    ¡Muchas Felicidades y gracias por ser parte
-                                    del universo de Hybrida!
+                                    Te invitamos a conocer a las obras ganadoras
+                                    en el poliforum cultural universitario.
                                 </p>
                             </div>
                         </div>

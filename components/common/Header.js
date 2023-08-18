@@ -28,7 +28,7 @@ const navigation = {
             target: "_blank",
         },
         {
-            name: "Ganadores",
+            name: "Creadores",
             href: "/ganadores",
         },
         // { name: "Candy Machine", href: "/candymachine" },
