@@ -251,21 +251,7 @@ export default function Home() {
                                                     viene a acompañarlo y a
                                                     generar nuevas corrientes
                                                     artísticas si lo queremos
-                                                    llamar de esta maneraEl
-                                                    concepto detrás de la obra,
-                                                    es simple; busca romper el
-                                                    taboo e incertidumbre que la
-                                                    IA está generando en el
-                                                    medio artístico, detrás de
-                                                    cada prompt hay una mente
-                                                    que lo generó y una máquina
-                                                    que lo ejecutó. La máquina
-                                                    no viene a reemplazar al
-                                                    humano, viene a acompañarlo
-                                                    y a generar nuevas
-                                                    corrientes artísticas si lo
-                                                    queremos llamar de esta
-                                                    manera{" "}
+                                                    llamar de esta manera.{" "}
                                                 </span>
                                             </h1>
                                         </div>
@@ -313,26 +299,29 @@ export default function Home() {
                                                     Rey Fernando Montes Trevizo{" "}
                                                 </span>{" "}
                                                 <span className=" bg-gradient-to-r  from-cyan-500 via-indigo-500  to-purple-500 bg-clip-text text-transparent xl:inline">
-                                                    Omnipresencia -
-                                                    Desdoblamiento de una imagen{" "}
+                                                    Virtualización del
+                                                    patrimonio{" "}
                                                 </span>
                                             </h1>
                                             <h1 className="text-md text-center tracking-tight md:text-xl">
                                                 <span className=" text-white xl:inline">
-                                                    Es un concepto de estar en
-                                                    todas partes y al mismo
-                                                    tiempo, ha sido abordado
-                                                    desde diferentes puntos
-                                                    sobre todo el espiritual o
-                                                    religioso. En mi idea de
-                                                    trasmitir esta idea a una
-                                                    imagen la fotografía
-                                                    panorámica permite desde un
-                                                    solo punto de vista observar
-                                                    el interior de un inmueble
-                                                    deformando la perspectiva en
-                                                    360°, algo imposible para el
-                                                    ojo humano.{" "}
+                                                    "La virtualización nos
+                                                    permite tener un registro
+                                                    del estado de conservación
+                                                    de un inmueble, se logra con
+                                                    la técnica de fotogrametría
+                                                    con drones capturando
+                                                    fotografías que se procesan
+                                                    dando como resultado un
+                                                    modelo tridimensional, que
+                                                    contiene más mil imágenes de
+                                                    alta resolución, se optimiza
+                                                    para poder visualizarlo con
+                                                    unos lentes de Realidad
+                                                    Virtual, acercando la
+                                                    historia, la cultura y el
+                                                    patrimonio mediante la
+                                                    tecnología y la innovación."{" "}
                                                 </span>
                                             </h1>
                                         </div>

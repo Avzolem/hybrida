@@ -6,7 +6,7 @@ const data = {
     title: "Hybrida",
     description: "Comunidad de Arte Digital",
     url: "https://hybrida.uach.mx",
-    imageUrl: "/og.jpeg",
+    imageUrl: "/og.png",
     twitter: "@avsolem",
 };
 

@@ -13,7 +13,7 @@ export default function Home() {
                         <div className="px-4 sm:px-8 lg:w-full ">
                             <h1 className="text-white-900 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
                                 <span className=" text-white xl:inline">
-                                    Hola Andres{" "}
+                                    Explora el{" "}
                                 </span>{" "}
                                 <span className=" text-hybrida-rosalogo xl:inline">
                                     Metaverso{" "}
